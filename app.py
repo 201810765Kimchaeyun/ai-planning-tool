@@ -140,8 +140,40 @@ if uploaded_file:
 
     st.divider()
 
+    # ── Claude 채팅용 프롬프트 ────────────────
+    st.markdown('<div class="section-title">🧠 Claude 채팅에 붙여넣을 프롬프트</div>', unsafe_allow_html=True)
+    st.caption("API 키 없이도 claude.ai 채팅창에 아래 프롬프트를 복사해서 바로 사용할 수 있습니다.")
+
+    prompt = (
+        "다음은 서비스 기획안이다.\n\n"
+        "이 내용을 분석해서 다음을 작성하라.\n\n"
+        "1. UX Issues\n"
+        "2. Policy Gaps\n"
+        "3. Edge Cases\n"
+        "4. QA Test Cases\n\n"
+        "기획안 내용:\n"
+        + all_text
+    )
+
+    col_prompt, col_btn = st.columns([5, 1])
+    with col_prompt:
+        st.text_area(
+            "프롬프트 (복사 후 claude.ai 채팅창에 붙여넣기)",
+            value=prompt,
+            height=220,
+            label_visibility="collapsed",
+        )
+    with col_btn:
+        st.link_button(
+            "💬 claude.ai\n열기",
+            url="https://claude.ai",
+            use_container_width=True,
+        )
+
+    st.divider()
+
     # ── QA 생성 버튼 ──────────────────────────
-    st.markdown('<div class="section-title">🧪 QA 테스트케이스 자동 생성</div>', unsafe_allow_html=True)
+    st.markdown('<div class="section-title">🧪 QA 테스트케이스 자동 생성 (API 키 필요)</div>', unsafe_allow_html=True)
 
     if st.button("✨ QA 테스트케이스 생성하기", type="primary", use_container_width=True):
 
