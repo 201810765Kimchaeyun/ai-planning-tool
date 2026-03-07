@@ -111,7 +111,19 @@ if uploaded_file:
     for i, slide in enumerate(prs.slides):
         text = ""
         for shape in slide.shapes:
-            if hasattr(shape, "text") and shape.text.strip():
+            # 테이블 셀 텍스트 추출 (shape.text는 셀 구분 없이 붙어나와 별도 처리)
+            if shape.shape_type == 19:  # MSO_SHAPE_TYPE.TABLE
+                table = shape.table
+                for row in table.rows:
+                    row_texts = []
+                    for cell in row.cells:
+                        cell_text = cell.text.strip()
+                        if cell_text:
+                            row_texts.append(cell_text)
+                    if row_texts:
+                        text += " | ".join(row_texts) + "\n"
+            # 일반 텍스트 박스 (테이블이 아닌 경우만)
+            elif hasattr(shape, "text") and shape.text.strip():
                 text += shape.text.strip() + "\n"
         slide_texts.append((i + 1, text))
         all_text += text + "\n"
