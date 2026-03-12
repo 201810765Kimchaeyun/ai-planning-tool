@@ -8,7 +8,7 @@ import pandas as pd
 # Page config
 # ─────────────────────────────────────────────
 st.set_page_config(
-    page_title="AI 기획 리뷰 툴_수정 테스트",
+    page_title="AI 기획 리뷰 툴",
     page_icon="🤖",
     layout="wide",
 )
@@ -92,7 +92,7 @@ with st.sidebar:
 # ─────────────────────────────────────────────
 st.markdown("""
 <div class="main-header">
-    <h1>🤖 AI 기획 리뷰 툴</h1>
+    <h1>🤖 AI 기획 리뷰 툴_수정 테스트</h1>
     <p>PPT 기획안을 업로드하면 AI가 QA 테스트케이스를 자동으로 생성합니다.</p>
 </div>
 """, unsafe_allow_html=True)
