@@ -1,0 +1,273 @@
+{
+  "generated_at": "2026-03-12 19:25:21",
+  "source_file_name": "글로벌_포르투갈_v1.1.pptx",
+  "ux_issues": [
+    {
+      "title": "언어 파라미터 의존성으로 인한 사용자 혼란",
+      "description": "?language=pt 파라미터에만 의존하여 언어 변경 시 URL이 복잡해지고, 사용자가 직접 URL을 조작하지 않는 이상 언어 전환이 불가능함",
+      "impact": "사용자가 언어를 자유롭게 변경할 수 없어 사용성이 크게 저하됨"
+    },
+    {
+      "title": "일관성 없는 언어 적용 범위",
+      "description": "주요 페이지만 포르투갈어로 번역되고 나머지는 영어로 유지되어, 사용자가 혼재된 언어 환경에서 서비스를 이용해야 함",
+      "impact": "언어 일관성 부족으로 사용자 경험이 단절되고 브랜드 신뢰도가 하락할 수 있음"
+    },
+    {
+      "title": "검색 기능의 언어 미지원",
+      "description": "글로벌 기능인 검색이 영어로만 유지되어 포르투갈어 사용자가 콘텐츠를 찾기 어려움",
+      "impact": "콘텐츠 발견성이 크게 저하되어 사용자 이탈률이 증가할 가능성"
+    },
+    {
+      "title": "모바일과 PC 간 일관성 부족",
+      "description": "PC와 모바일에서 작품 전시 개수가 다르고(5개 vs 3개), 언어 옵션 표기가 다름(풀네임 vs 약어)",
+      "impact": "디바이스 간 사용 경험이 달라져 사용자 혼란을 초래"
+    },
+    {
+      "title": "내서재 언어 선택의 복잡한 로직",
+      "description": "iso_country, local_code, 사용자 선택 등 여러 기준이 복잡하게 얽혀있어 예측하기 어려운 동작을 보일 수 있음",
+      "impact": "사용자가 예상과 다른 언어로 콘텐츠가 노출되어 혼란스러워할 수 있음"
+    },
+    {
+      "title": "작품명 말줄임 처리의 가독성 문제",
+      "description": "작품명이 2줄을 초과할 경우 '...' 처리되어 전체 제목을 확인할 수 없음",
+      "impact": "사용자가 작품을 정확히 식별하기 어려워 클릭률이 감소할 수 있음"
+    },
+    {
+      "title": "AI 번역 품질에 대한 품질 관리 부재",
+      "description": "AI 번역을 사용하지만 번역 품질 검수나 관리 프로세스가 명시되지 않음",
+      "impact": "부정확한 번역으로 인해 사용자가 콘텐츠를 잘못 이해하거나 서비스 품질에 대한 불신이 생길 수 있음"
+    }
+  ],
+  "policy_gaps": [
+    {
+      "title": "언어 감지 및 자동 전환 정책 부재",
+      "description": "브라우저 언어나 지역 정보를 활용한 자동 언어 감지 및 전환 정책이 없음",
+      "recommendation": "사용자의 브라우저 언어 설정을 감지하여 자동으로 적절한 언어로 리다이렉트하는 정책 수립"
+    },
+    {
+      "title": "번역 품질 관리 정책 미비",
+      "description": "AI 번역 사용에 대한 품질 관리, 검수 프로세스, 오번역 신고 및 수정 체계가 없음",
+      "recommendation": "번역 품질 가이드라인, 정기적인 품질 검수, 사용자 피드백 수집 및 개선 프로세스 구축"
+    },
+    {
+      "title": "다국어 콘텐츠 관리 정책 부재",
+      "description": "새로운 콘텐츠 추가 시 포르투갈어 번역 우선순위, 번역 시점, 품질 기준 등이 명시되지 않음",
+      "recommendation": "콘텐츠 현지화 우선순위 매트릭스, 번역 작업 플로우, SLA 정책 수립"
+    },
+    {
+      "title": "사용자 언어 선호도 저장 정책 미흡",
+      "description": "내서재에서만 언어 선택을 저장하고, 전체 서비스에서의 언어 선호도 관리 정책이 없음",
+      "recommendation": "전역 언어 선호도 설정 기능과 쿠키/세션 기반 언어 설정 유지 정책 구축"
+    },
+    {
+      "title": "지역별 결제 정책 고려 부재",
+      "description": "브라질/포르투갈 지역의 결제 수단, 통화, 세금 정책에 대한 고려가 없음",
+      "recommendation": "현지 결제 수단(PIX, Boleto 등) 지원, 현지 통화 표시, 세금 정책 적용 방안 검토"
+    },
+    {
+      "title": "고객 지원 언어 정책 부재",
+      "description": "포르투갈어 사용자를 위한 고객 지원, FAQ, 공지사항 등의 언어 지원 정책이 없음",
+      "recommendation": "포르투갈어 고객 지원 체계, 다국어 FAQ, 현지 시간대 고려 지원 시간 정책 수립"
+    },
+    {
+      "title": "콘텐츠 연령 등급 및 규제 정책 미비",
+      "description": "브라질/포르투갈의 콘텐츠 규제, 연령 등급 시스템에 대한 고려가 없음",
+      "recommendation": "현지 콘텐츠 규제 법령 검토, 연령 등급 표시, 부적절한 콘텐츠 필터링 정책 수립"
+    }
+  ],
+  "edge_cases": [
+    {
+      "title": "URL 파라미터 손실 시나리오",
+      "scenario": "사용자가 포르투갈어 페이지에서 외부 링크를 거쳐 다시 돌아올 때 ?language=pt 파라미터가 누락되는 경우",
+      "expected_behavior": "세션이나 쿠키를 통해 언어 설정을 유지하거나, 사용자 계정의 언어 설정으로 복원"
+    },
+    {
+      "title": "번역되지 않은 콘텐츠 접근",
+      "scenario": "포르투갈어로 번역되지 않은 작품에 포르투갈어 모드로 접근하는 경우",
+      "expected_behavior": "원본 언어(영어/한국어)로 표시하되 번역 중임을 알리는 안내 메시지 표시"
+    },
+    {
+      "title": "혼합 언어 검색 쿼리",
+      "scenario": "포르투갈어 사용자가 영어로 작품을 검색하거나 그 반대의 경우",
+      "expected_behavior": "다국어 검색을 지원하거나 검색 결과가 없을 때 다른 언어로 재검색 제안"
+    },
+    {
+      "title": "내서재 언어 전환 시 빈 목록",
+      "scenario": "내서재에서 Portuguese로 전환했을 때 해당 언어로 번역된 작품이 하나도 없는 경우",
+      "expected_behavior": "자동으로 English로 전환하되 사용자에게 안내 메시지 표시"
+    },
+    {
+      "title": "결제 모달의 언어 불일치",
+      "scenario": "영어 페이지에서 결제를 시작했지만 ?language=pt 파라미터가 있어 포르투갈어 결제 모달이 뜨는 경우",
+      "expected_behavior": "결제 시점의 페이지 언어와 일치하도록 모달 언어 결정"
+    },
+    {
+      "title": "작가명의 특수 문자 처리",
+      "scenario": "포르투갈어 특수 문자(ã, ç, õ 등)가 포함된 작가명이나 작품명의 URL 인코딩 문제",
+      "expected_behavior": "UTF-8 인코딩으로 정상 처리되고 SEO에 영향 없도록 처리"
+    },
+    {
+      "title": "모바일과 PC 간 세션 동기화",
+      "scenario": "PC에서 포르투갈어로 설정한 후 모바일로 접속했을 때 언어 설정이 동기화되지 않는 경우",
+      "expected_behavior": "계정 기반 언어 설정 동기화 또는 디바이스별 개별 설정 유지 정책 명확화"
+    },
+    {
+      "title": "AI 번역 서비스 장애",
+      "scenario": "AI 번역 서비스에 문제가 생겨 실시간 번역이 불가능한 경우",
+      "expected_behavior": "미리 번역된 캐시 데이터 사용 또는 원본 언어로 대체 표시"
+    },
+    {
+      "title": "브라질 vs 포르투갈 방언 차이",
+      "scenario": "브라질 포르투갈어로 번역된 콘텐츠를 포르투갈 사용자가 이용할 때 방언 차이로 인한 이해도 문제",
+      "expected_behavior": "방언 차이를 고려한 번역 검수 또는 지역별 번역 옵션 제공"
+    },
+    {
+      "title": "대용량 콘텐츠 번역 지연",
+      "scenario": "매우 긴 소설 본문의 AI 번역이 지연되어 사용자가 오래 기다리는 경우",
+      "expected_behavior": "단락별 순차 번역 또는 번역 진행률 표시, 원본과 번역본 토글 옵션 제공"
+    }
+  ],
+  "test_cases": [
+    {
+      "id": "TC-001",
+      "test_case": "포르투갈어 인트로 페이지 접근",
+      "description": "?language=pt 파라미터로 인트로 페이지 접근 시 모든 요소가 포르투갈어로 표시되는지 확인",
+      "expected_result": "배너, 텍스트, 작품 정보가 모두 포르투갈어로 정상 표시됨",
+      "priority": "High"
+    },
+    {
+      "id": "TC-002",
+      "test_case": "파라미터 없이 인트로 페이지 접근",
+      "description": "?language=pt 파라미터 없이 일반 URL로 인트로 페이지 접근",
+      "expected_result": "기본 언어(영어)로 표시되거나 적절한 언어 안내 제공",
+      "priority": "High"
+    },
+    {
+      "id": "TC-003",
+      "test_case": "포르투갈어 모드에서 회원가입",
+      "description": "?language=pt 상태에서 회원가입 진행",
+      "expected_result": "local_code가 'pt'로 저장되고 가입 프로세스가 포르투갈어로 진행됨",
+      "priority": "High"
+    },
+    {
+      "id": "TC-004",
+      "test_case": "작품 클릭 후 페이지 이동",
+      "description": "포르투갈어 인트로에서 작품 클릭 시 회차리스트로 이동",
+      "expected_result": "?language=pt 파라미터가 유지되며 회차리스트가 포르투갈어로 표시됨",
+      "priority": "High"
+    },
+    {
+      "id": "TC-005",
+      "test_case": "뷰어에서 로그인 모달 확인",
+      "description": "포르투갈어 모드 뷰어에서 로그인 모달 호출",
+      "expected_result": "로그인 모달이 포르투갈어로 표시되고 적절한 배너 이미지가 노출됨",
+      "priority": "High"
+    },
+    {
+      "id": "TC-006",
+      "test_case": "내서재 언어 드롭다운 기능",
+      "description": "내서재에서 Portuguese/English 언어 전환",
+      "expected_result": "선택한 언어에 따라 작품 목록이 해당 언어 번역본으로 변경됨",
+      "priority": "High"
+    },
+    {
+      "id": "TC-007",
+      "test_case": "모바일 포르투갈어 페이지 레이아웃",
+      "description": "모바일에서 포르투갈어 인트로 페이지의 작품 전시",
+      "expected_result": "3열로 작품이 정상 표시되고 모든 텍스트가 포르투갈어로 표시됨",
+      "priority": "High"
+    },
+    {
+      "id": "TC-008",
+      "test_case": "결제 모달 포르투갈어 표시",
+      "description": "?language=pt 상태에서 플랜 결제 모달 호출",
+      "expected_result": "결제 모달의 모든 UI와 배너가 포르투갈어로 표시됨",
+      "priority": "High"
+    },
+    {
+      "id": "TC-009",
+      "test_case": "AI 번역 콘텐츠 품질 확인",
+      "description": "포르투갈어로 번역된 작품명, 줄거리, 본문 내용 확인",
+      "expected_result": "번역이 자연스럽고 의미가 통하며 특수문자가 정상 표시됨",
+      "priority": "Medium"
+    },
+    {
+      "id": "TC-010",
+      "test_case": "작품명 2줄 초과 시 말줄임 처리",
+      "description": "긴 작품명이 2줄을 초과할 때의 표시",
+      "expected_result": "2줄까지만 표시되고 나머지는 '...'로 처리됨",
+      "priority": "Medium"
+    },
+    {
+      "id": "TC-011",
+      "test_case": "50작품 무한 스크롤 기능",
+      "description": "인트로 페이지에서 50개 작품 모두 로딩되는지 확인",
+      "expected_result": "스크롤 시 모든 작품이 순차적으로 로딩되고 성능 이슈 없음",
+      "priority": "Medium"
+    },
+    {
+      "id": "TC-012",
+      "test_case": "글로벌 계정과 포르투갈 계정 연동",
+      "description": "기존 글로벌 계정으로 포르투갈어 모드 로그인",
+      "expected_result": "동일 계정으로 정상 로그인되고 포르투갈 콘텐츠 접근 가능",
+      "priority": "Medium"
+    },
+    {
+      "id": "TC-013",
+      "test_case": "검색 기능 언어 혼재 확인",
+      "description": "포르투갈어 모드에서 검색 기능 사용",
+      "expected_result": "검색 UI는 영어로 유지되지만 검색 결과에서 언어 혼란 없음",
+      "priority": "Medium"
+    },
+    {
+      "id": "TC-014",
+      "test_case": "내서재 띠배너 기능",
+      "description": "내서재 상단 포르투갈 인트로 유입 배너 클릭",
+      "expected_result": "클릭 시 포르투갈어 인트로 페이지로 정상 이동",
+      "priority": "Low"
+    },
+    {
+      "id": "TC-015",
+      "test_case": "브라질/포르투갈 회원 조회수 정렬",
+      "description": "작품 정렬이 브라질+포르투갈 회원 조회수 기준인지 확인",
+      "expected_result": "해당 지역 사용자들의 선호도가 반영된 순서로 작품이 정렬됨",
+      "priority": "Low"
+    },
+    {
+      "id": "TC-016",
+      "test_case": "URL 파라미터 유지 범위 확인",
+      "description": "지정된 페이지 외 다른 페이지 이동 시 파라미터 처리",
+      "expected_result": "지정 범위 외 페이지에서는 영어로 표시되고 파라미터가 적절히 처리됨",
+      "priority": "Medium"
+    },
+    {
+      "id": "TC-017",
+      "test_case": "포르투갈어 특수문자 렌더링",
+      "description": "ã, ç, õ 등 포르투갈어 특수문자가 포함된 텍스트 표시",
+      "expected_result": "모든 특수문자가 깨지지 않고 정상적으로 렌더링됨",
+      "priority": "Medium"
+    },
+    {
+      "id": "TC-018",
+      "test_case": "크로스 브라우저 포르투갈어 지원",
+      "description": "Chrome, Firefox, Safari에서 포르투갈어 페이지 테스트",
+      "expected_result": "모든 브라우저에서 일관된 포르투갈어 표시 및 기능 동작",
+      "priority": "Medium"
+    },
+    {
+      "id": "TC-019",
+      "test_case": "네트워크 오류 시 번역 처리",
+      "description": "AI 번역 서비스 장애 상황 시뮬레이션",
+      "expected_result": "원본 텍스트로 대체 표시되거나 적절한 오류 메시지 제공",
+      "priority": "Low"
+    },
+    {
+      "id": "TC-020",
+      "test_case": "SEO 메타 태그 포르투갈어 적용",
+      "description": "포르투갈어 페이지의 title, description 메타태그 확인",
+      "expected_result": "검색엔진 최적화를 위한 포르투갈어 메타태그가 적절히 설정됨",
+      "priority": "Low"
+    }
+  ],
+  "html_report": "\n    <!DOCTYPE html>\n    <html lang=\"ko\">\n    <head>\n        <meta charset=\"UTF-8\">\n        <title>AI Planning Review Report</title>\n        <style>\n            body {\n                font-family: Arial, sans-serif;\n                margin: 32px;\n                color: #1e293b;\n                line-height: 1.6;\n            }\n            h1 {\n                margin-bottom: 8px;\n            }\n            .meta {\n                color: #64748b;\n                margin-bottom: 24px;\n            }\n            h2 {\n                margin-top: 32px;\n                padding-bottom: 8px;\n                border-bottom: 2px solid #e2e8f0;\n            }\n            table {\n                width: 100%;\n                border-collapse: collapse;\n                margin-top: 12px;\n                margin-bottom: 24px;\n                table-layout: fixed;\n                word-wrap: break-word;\n            }\n            th, td {\n                border: 1px solid #cbd5e1;\n                padding: 10px;\n                text-align: left;\n                vertical-align: top;\n                font-size: 14px;\n            }\n            th {\n                background: #f1f5f9;\n            }\n        </style>\n    </head>\n    <body>\n        <h1>AI 기획 리뷰 결과</h1>\n        <div class=\"meta\">\n            <div><strong>생성 시각:</strong> 2026-03-12 19:25:21</div>\n            <div><strong>원본 파일:</strong> 글로벌_포르투갈_v1.1.pptx</div>\n        </div>\n\n        \n    <h2>1. UX Issues</h2>\n    <table class=\"dataframe\">\n  <thead>\n    <tr style=\"text-align: right;\">\n      <th>Title</th>\n      <th>Description</th>\n      <th>Impact</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>언어 파라미터 의존성으로 인한 사용자 혼란</td>\n      <td>?language=pt 파라미터에만 의존하여 언어 변경 시 URL이 복잡해지고, 사용자가 직접 URL을 조작하지 않는 이상 언어 전환이 불가능함</td>\n      <td>사용자가 언어를 자유롭게 변경할 수 없어 사용성이 크게 저하됨</td>\n    </tr>\n    <tr>\n      <td>일관성 없는 언어 적용 범위</td>\n      <td>주요 페이지만 포르투갈어로 번역되고 나머지는 영어로 유지되어, 사용자가 혼재된 언어 환경에서 서비스를 이용해야 함</td>\n      <td>언어 일관성 부족으로 사용자 경험이 단절되고 브랜드 신뢰도가 하락할 수 있음</td>\n    </tr>\n    <tr>\n      <td>검색 기능의 언어 미지원</td>\n      <td>글로벌 기능인 검색이 영어로만 유지되어 포르투갈어 사용자가 콘텐츠를 찾기 어려움</td>\n      <td>콘텐츠 발견성이 크게 저하되어 사용자 이탈률이 증가할 가능성</td>\n    </tr>\n    <tr>\n      <td>모바일과 PC 간 일관성 부족</td>\n      <td>PC와 모바일에서 작품 전시 개수가 다르고(5개 vs 3개), 언어 옵션 표기가 다름(풀네임 vs 약어)</td>\n      <td>디바이스 간 사용 경험이 달라져 사용자 혼란을 초래</td>\n    </tr>\n    <tr>\n      <td>내서재 언어 선택의 복잡한 로직</td>\n      <td>iso_country, local_code, 사용자 선택 등 여러 기준이 복잡하게 얽혀있어 예측하기 어려운 동작을 보일 수 있음</td>\n      <td>사용자가 예상과 다른 언어로 콘텐츠가 노출되어 혼란스러워할 수 있음</td>\n    </tr>\n    <tr>\n      <td>작품명 말줄임 처리의 가독성 문제</td>\n      <td>작품명이 2줄을 초과할 경우 '...' 처리되어 전체 제목을 확인할 수 없음</td>\n      <td>사용자가 작품을 정확히 식별하기 어려워 클릭률이 감소할 수 있음</td>\n    </tr>\n    <tr>\n      <td>AI 번역 품질에 대한 품질 관리 부재</td>\n      <td>AI 번역을 사용하지만 번역 품질 검수나 관리 프로세스가 명시되지 않음</td>\n      <td>부정확한 번역으로 인해 사용자가 콘텐츠를 잘못 이해하거나 서비스 품질에 대한 불신이 생길 수 있음</td>\n    </tr>\n  </tbody>\n</table>\n    \n        \n    <h2>2. Policy Gaps</h2>\n    <table class=\"dataframe\">\n  <thead>\n    <tr style=\"text-align: right;\">\n      <th>Title</th>\n      <th>Description</th>\n      <th>Recommendation</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>언어 감지 및 자동 전환 정책 부재</td>\n      <td>브라우저 언어나 지역 정보를 활용한 자동 언어 감지 및 전환 정책이 없음</td>\n      <td>사용자의 브라우저 언어 설정을 감지하여 자동으로 적절한 언어로 리다이렉트하는 정책 수립</td>\n    </tr>\n    <tr>\n      <td>번역 품질 관리 정책 미비</td>\n      <td>AI 번역 사용에 대한 품질 관리, 검수 프로세스, 오번역 신고 및 수정 체계가 없음</td>\n      <td>번역 품질 가이드라인, 정기적인 품질 검수, 사용자 피드백 수집 및 개선 프로세스 구축</td>\n    </tr>\n    <tr>\n      <td>다국어 콘텐츠 관리 정책 부재</td>\n      <td>새로운 콘텐츠 추가 시 포르투갈어 번역 우선순위, 번역 시점, 품질 기준 등이 명시되지 않음</td>\n      <td>콘텐츠 현지화 우선순위 매트릭스, 번역 작업 플로우, SLA 정책 수립</td>\n    </tr>\n    <tr>\n      <td>사용자 언어 선호도 저장 정책 미흡</td>\n      <td>내서재에서만 언어 선택을 저장하고, 전체 서비스에서의 언어 선호도 관리 정책이 없음</td>\n      <td>전역 언어 선호도 설정 기능과 쿠키/세션 기반 언어 설정 유지 정책 구축</td>\n    </tr>\n    <tr>\n      <td>지역별 결제 정책 고려 부재</td>\n      <td>브라질/포르투갈 지역의 결제 수단, 통화, 세금 정책에 대한 고려가 없음</td>\n      <td>현지 결제 수단(PIX, Boleto 등) 지원, 현지 통화 표시, 세금 정책 적용 방안 검토</td>\n    </tr>\n    <tr>\n      <td>고객 지원 언어 정책 부재</td>\n      <td>포르투갈어 사용자를 위한 고객 지원, FAQ, 공지사항 등의 언어 지원 정책이 없음</td>\n      <td>포르투갈어 고객 지원 체계, 다국어 FAQ, 현지 시간대 고려 지원 시간 정책 수립</td>\n    </tr>\n    <tr>\n      <td>콘텐츠 연령 등급 및 규제 정책 미비</td>\n      <td>브라질/포르투갈의 콘텐츠 규제, 연령 등급 시스템에 대한 고려가 없음</td>\n      <td>현지 콘텐츠 규제 법령 검토, 연령 등급 표시, 부적절한 콘텐츠 필터링 정책 수립</td>\n    </tr>\n  </tbody>\n</table>\n    \n        \n    <h2>3. Edge Cases</h2>\n    <table class=\"dataframe\">\n  <thead>\n    <tr style=\"text-align: right;\">\n      <th>Title</th>\n      <th>Scenario</th>\n      <th>Expected Behavior</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>URL 파라미터 손실 시나리오</td>\n      <td>사용자가 포르투갈어 페이지에서 외부 링크를 거쳐 다시 돌아올 때 ?language=pt 파라미터가 누락되는 경우</td>\n      <td>세션이나 쿠키를 통해 언어 설정을 유지하거나, 사용자 계정의 언어 설정으로 복원</td>\n    </tr>\n    <tr>\n      <td>번역되지 않은 콘텐츠 접근</td>\n      <td>포르투갈어로 번역되지 않은 작품에 포르투갈어 모드로 접근하는 경우</td>\n      <td>원본 언어(영어/한국어)로 표시하되 번역 중임을 알리는 안내 메시지 표시</td>\n    </tr>\n    <tr>\n      <td>혼합 언어 검색 쿼리</td>\n      <td>포르투갈어 사용자가 영어로 작품을 검색하거나 그 반대의 경우</td>\n      <td>다국어 검색을 지원하거나 검색 결과가 없을 때 다른 언어로 재검색 제안</td>\n    </tr>\n    <tr>\n      <td>내서재 언어 전환 시 빈 목록</td>\n      <td>내서재에서 Portuguese로 전환했을 때 해당 언어로 번역된 작품이 하나도 없는 경우</td>\n      <td>자동으로 English로 전환하되 사용자에게 안내 메시지 표시</td>\n    </tr>\n    <tr>\n      <td>결제 모달의 언어 불일치</td>\n      <td>영어 페이지에서 결제를 시작했지만 ?language=pt 파라미터가 있어 포르투갈어 결제 모달이 뜨는 경우</td>\n      <td>결제 시점의 페이지 언어와 일치하도록 모달 언어 결정</td>\n    </tr>\n    <tr>\n      <td>작가명의 특수 문자 처리</td>\n      <td>포르투갈어 특수 문자(ã, ç, õ 등)가 포함된 작가명이나 작품명의 URL 인코딩 문제</td>\n      <td>UTF-8 인코딩으로 정상 처리되고 SEO에 영향 없도록 처리</td>\n    </tr>\n    <tr>\n      <td>모바일과 PC 간 세션 동기화</td>\n      <td>PC에서 포르투갈어로 설정한 후 모바일로 접속했을 때 언어 설정이 동기화되지 않는 경우</td>\n      <td>계정 기반 언어 설정 동기화 또는 디바이스별 개별 설정 유지 정책 명확화</td>\n    </tr>\n    <tr>\n      <td>AI 번역 서비스 장애</td>\n      <td>AI 번역 서비스에 문제가 생겨 실시간 번역이 불가능한 경우</td>\n      <td>미리 번역된 캐시 데이터 사용 또는 원본 언어로 대체 표시</td>\n    </tr>\n    <tr>\n      <td>브라질 vs 포르투갈 방언 차이</td>\n      <td>브라질 포르투갈어로 번역된 콘텐츠를 포르투갈 사용자가 이용할 때 방언 차이로 인한 이해도 문제</td>\n      <td>방언 차이를 고려한 번역 검수 또는 지역별 번역 옵션 제공</td>\n    </tr>\n    <tr>\n      <td>대용량 콘텐츠 번역 지연</td>\n      <td>매우 긴 소설 본문의 AI 번역이 지연되어 사용자가 오래 기다리는 경우</td>\n      <td>단락별 순차 번역 또는 번역 진행률 표시, 원본과 번역본 토글 옵션 제공</td>\n    </tr>\n  </tbody>\n</table>\n    \n        \n    <h2>4. QA Test Cases</h2>\n    <table class=\"dataframe\">\n  <thead>\n    <tr style=\"text-align: right;\">\n      <th>TC #</th>\n      <th>Test Case</th>\n      <th>Description</th>\n      <th>Expected Result</th>\n      <th>Priority</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>TC-001</td>\n      <td>포르투갈어 인트로 페이지 접근</td>\n      <td>?language=pt 파라미터로 인트로 페이지 접근 시 모든 요소가 포르투갈어로 표시되는지 확인</td>\n      <td>배너, 텍스트, 작품 정보가 모두 포르투갈어로 정상 표시됨</td>\n      <td>High</td>\n    </tr>\n    <tr>\n      <td>TC-002</td>\n      <td>파라미터 없이 인트로 페이지 접근</td>\n      <td>?language=pt 파라미터 없이 일반 URL로 인트로 페이지 접근</td>\n      <td>기본 언어(영어)로 표시되거나 적절한 언어 안내 제공</td>\n      <td>High</td>\n    </tr>\n    <tr>\n      <td>TC-003</td>\n      <td>포르투갈어 모드에서 회원가입</td>\n      <td>?language=pt 상태에서 회원가입 진행</td>\n      <td>local_code가 'pt'로 저장되고 가입 프로세스가 포르투갈어로 진행됨</td>\n      <td>High</td>\n    </tr>\n    <tr>\n      <td>TC-004</td>\n      <td>작품 클릭 후 페이지 이동</td>\n      <td>포르투갈어 인트로에서 작품 클릭 시 회차리스트로 이동</td>\n      <td>?language=pt 파라미터가 유지되며 회차리스트가 포르투갈어로 표시됨</td>\n      <td>High</td>\n    </tr>\n    <tr>\n      <td>TC-005</td>\n      <td>뷰어에서 로그인 모달 확인</td>\n      <td>포르투갈어 모드 뷰어에서 로그인 모달 호출</td>\n      <td>로그인 모달이 포르투갈어로 표시되고 적절한 배너 이미지가 노출됨</td>\n      <td>High</td>\n    </tr>\n    <tr>\n      <td>TC-006</td>\n      <td>내서재 언어 드롭다운 기능</td>\n      <td>내서재에서 Portuguese/English 언어 전환</td>\n      <td>선택한 언어에 따라 작품 목록이 해당 언어 번역본으로 변경됨</td>\n      <td>High</td>\n    </tr>\n    <tr>\n      <td>TC-007</td>\n      <td>모바일 포르투갈어 페이지 레이아웃</td>\n      <td>모바일에서 포르투갈어 인트로 페이지의 작품 전시</td>\n      <td>3열로 작품이 정상 표시되고 모든 텍스트가 포르투갈어로 표시됨</td>\n      <td>High</td>\n    </tr>\n    <tr>\n      <td>TC-008</td>\n      <td>결제 모달 포르투갈어 표시</td>\n      <td>?language=pt 상태에서 플랜 결제 모달 호출</td>\n      <td>결제 모달의 모든 UI와 배너가 포르투갈어로 표시됨</td>\n      <td>High</td>\n    </tr>\n    <tr>\n      <td>TC-009</td>\n      <td>AI 번역 콘텐츠 품질 확인</td>\n      <td>포르투갈어로 번역된 작품명, 줄거리, 본문 내용 확인</td>\n      <td>번역이 자연스럽고 의미가 통하며 특수문자가 정상 표시됨</td>\n      <td>Medium</td>\n    </tr>\n    <tr>\n      <td>TC-010</td>\n      <td>작품명 2줄 초과 시 말줄임 처리</td>\n      <td>긴 작품명이 2줄을 초과할 때의 표시</td>\n      <td>2줄까지만 표시되고 나머지는 '...'로 처리됨</td>\n      <td>Medium</td>\n    </tr>\n    <tr>\n      <td>TC-011</td>\n      <td>50작품 무한 스크롤 기능</td>\n      <td>인트로 페이지에서 50개 작품 모두 로딩되는지 확인</td>\n      <td>스크롤 시 모든 작품이 순차적으로 로딩되고 성능 이슈 없음</td>\n      <td>Medium</td>\n    </tr>\n    <tr>\n      <td>TC-012</td>\n      <td>글로벌 계정과 포르투갈 계정 연동</td>\n      <td>기존 글로벌 계정으로 포르투갈어 모드 로그인</td>\n      <td>동일 계정으로 정상 로그인되고 포르투갈 콘텐츠 접근 가능</td>\n      <td>Medium</td>\n    </tr>\n    <tr>\n      <td>TC-013</td>\n      <td>검색 기능 언어 혼재 확인</td>\n      <td>포르투갈어 모드에서 검색 기능 사용</td>\n      <td>검색 UI는 영어로 유지되지만 검색 결과에서 언어 혼란 없음</td>\n      <td>Medium</td>\n    </tr>\n    <tr>\n      <td>TC-014</td>\n      <td>내서재 띠배너 기능</td>\n      <td>내서재 상단 포르투갈 인트로 유입 배너 클릭</td>\n      <td>클릭 시 포르투갈어 인트로 페이지로 정상 이동</td>\n      <td>Low</td>\n    </tr>\n    <tr>\n      <td>TC-015</td>\n      <td>브라질/포르투갈 회원 조회수 정렬</td>\n      <td>작품 정렬이 브라질+포르투갈 회원 조회수 기준인지 확인</td>\n      <td>해당 지역 사용자들의 선호도가 반영된 순서로 작품이 정렬됨</td>\n      <td>Low</td>\n    </tr>\n    <tr>\n      <td>TC-016</td>\n      <td>URL 파라미터 유지 범위 확인</td>\n      <td>지정된 페이지 외 다른 페이지 이동 시 파라미터 처리</td>\n      <td>지정 범위 외 페이지에서는 영어로 표시되고 파라미터가 적절히 처리됨</td>\n      <td>Medium</td>\n    </tr>\n    <tr>\n      <td>TC-017</td>\n      <td>포르투갈어 특수문자 렌더링</td>\n      <td>ã, ç, õ 등 포르투갈어 특수문자가 포함된 텍스트 표시</td>\n      <td>모든 특수문자가 깨지지 않고 정상적으로 렌더링됨</td>\n      <td>Medium</td>\n    </tr>\n    <tr>\n      <td>TC-018</td>\n      <td>크로스 브라우저 포르투갈어 지원</td>\n      <td>Chrome, Firefox, Safari에서 포르투갈어 페이지 테스트</td>\n      <td>모든 브라우저에서 일관된 포르투갈어 표시 및 기능 동작</td>\n      <td>Medium</td>\n    </tr>\n    <tr>\n      <td>TC-019</td>\n      <td>네트워크 오류 시 번역 처리</td>\n      <td>AI 번역 서비스 장애 상황 시뮬레이션</td>\n      <td>원본 텍스트로 대체 표시되거나 적절한 오류 메시지 제공</td>\n      <td>Low</td>\n    </tr>\n    <tr>\n      <td>TC-020</td>\n      <td>SEO 메타 태그 포르투갈어 적용</td>\n      <td>포르투갈어 페이지의 title, description 메타태그 확인</td>\n      <td>검색엔진 최적화를 위한 포르투갈어 메타태그가 적절히 설정됨</td>\n      <td>Low</td>\n    </tr>\n  </tbody>\n</table>\n    \n    </body>\n    </html>\n    "
+}
