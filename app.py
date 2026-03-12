@@ -8,7 +8,7 @@ import pandas as pd
 # Page config
 # ─────────────────────────────────────────────
 st.set_page_config(
-    page_title="AI 기획 리뷰 툴",
+    page_title="AI 기획 리뷰 툴_수정 테스트",
     page_icon="🤖",
     layout="wide",
 )
