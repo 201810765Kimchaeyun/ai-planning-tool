@@ -1,4 +1,6 @@
 streamlit
-
-python-pptx
 anthropic
+python-pptx
+beautifulsoup4
+python-docx
+openpyxl
