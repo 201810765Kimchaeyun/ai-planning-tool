@@ -1,0 +1,2812 @@
+{
+  "id": "20260317_182223_글로벌_포르투갈_v1.1.pptx",
+  "file_name": "글로벌_포르투갈_v1.1.pptx",
+  "saved_at": "2026-03-17 18:22:23",
+  "selected": [
+    "test_cases"
+  ],
+  "results": {
+    "test_cases": [
+      {
+        "id": "TC-04-001",
+        "test_case": "포르투갈 인트로 페이지 정상 접근",
+        "description": "global.novelpia.com/intro?language=pt URL로 포르투갈 인트로 페이지 접근 테스트",
+        "expected_result": "포르투갈 인트로 페이지가 정상 로드되고, UI 텍스트가 포르투갈어로 표시됨",
+        "priority": "High",
+        "screen": "Slide 4"
+      },
+      {
+        "id": "TC-04-002",
+        "test_case": "language=pt 파라미터 없는 인트로 페이지 접근",
+        "description": "global.novelpia.com/intro URL로 인트로 페이지 접근 시 영어 UI 표시 확인",
+        "expected_result": "인트로 페이지 UI가 영어로 표시됨",
+        "priority": "High",
+        "screen": "Slide 4"
+      },
+      {
+        "id": "TC-04-003",
+        "test_case": "포르투갈 인트로 페이지에서 회차 리스트로 이동",
+        "description": "포르투갈 인트로 페이지에서 작품 선택 시 회차 리스트 페이지로 이동",
+        "expected_result": "회차 리스트 페이지로 이동되며 ?language=pt 파라미터가 유지되고 포르투갈어 UI 표시",
+        "priority": "High",
+        "screen": "Slide 4"
+      },
+      {
+        "id": "TC-04-004",
+        "test_case": "포르투갈 회차 리스트에서 뷰어로 이동",
+        "description": "포르투갈 회차 리스트에서 회차 선택 시 뷰어 페이지로 이동",
+        "expected_result": "뷰어 페이지로 이동되며 ?language=pt 파라미터가 유지되고 포르투갈어 UI 표시",
+        "priority": "High",
+        "screen": "Slide 4"
+      },
+      {
+        "id": "TC-04-005",
+        "test_case": "포르투갈 뷰어에서 로그인 모달 호출",
+        "description": "비로그인 상태에서 포르투갈 뷰어 페이지에서 로그인 모달 호출",
+        "expected_result": "로그인 모달이 포르투갈어 UI로 표시되고 포르투갈 버전 배너 디자인 적용",
+        "priority": "High",
+        "screen": "Slide 4"
+      },
+      {
+        "id": "TC-04-006",
+        "test_case": "포르투갈 뷰어에서 회원가입 모달 호출",
+        "description": "비로그인 상태에서 포르투갈 뷰어 페이지에서 회원가입 모달 호출",
+        "expected_result": "회원가입 모달이 포르투갈어 UI로 표시되고 포르투갈 버전 배너 디자인 적용",
+        "priority": "High",
+        "screen": "Slide 4"
+      },
+      {
+        "id": "TC-04-007",
+        "test_case": "포르투갈 뷰어에서 결제 모달 호출",
+        "description": "로그인된 상태에서 포르투갈 뷰어 페이지에서 결제 모달 호출",
+        "expected_result": "결제 모달이 포르투갈어 UI로 표시됨",
+        "priority": "High",
+        "screen": "Slide 4"
+      },
+      {
+        "id": "TC-04-008",
+        "test_case": "포르투갈 결제 모달에서 플랜 페이지로 이동",
+        "description": "포르투갈 결제 모달에서 플랜 페이지로 이동",
+        "expected_result": "플랜 페이지로 이동되며 ?language=pt 파라미터가 유지되고 포르투갈어 UI 표시",
+        "priority": "High",
+        "screen": "Slide 4"
+      },
+      {
+        "id": "TC-04-009",
+        "test_case": "포르투갈 페이지에서 적용 페이지 외로 이동 시 파라미터 제거",
+        "description": "포르투갈 페이지에서 내서재, 마이페이지, 검색, 랭킹 등으로 이동",
+        "expected_result": "?language=pt 파라미터가 제거되고 UI가 영어로 변경됨",
+        "priority": "High",
+        "screen": "Slide 4"
+      },
+      {
+        "id": "TC-04-010",
+        "test_case": "포르투갈 작품의 글로벌 서비스 영역 비노출 확인",
+        "description": "랭킹, 검색, 글로벌 메인, 큐레이션 페이지에서 포르투갈 작품 노출 여부 확인",
+        "expected_result": "포르투갈 작품이 노출되지 않음",
+        "priority": "High",
+        "screen": "Slide 4"
+      },
+      {
+        "id": "TC-04-011",
+        "test_case": "포르투갈 페이지 헤더 메뉴 언어 유지",
+        "description": "포르투갈 페이지에서 헤더 메뉴 언어 확인",
+        "expected_result": "헤더 메뉴가 영문으로 유지됨",
+        "priority": "High",
+        "screen": "Slide 4"
+      },
+      {
+        "id": "TC-04-012",
+        "test_case": "포르투갈 상태에서 회원가입 시 local_code 설정",
+        "description": "?language=pt 상태에서 회원가입 진행",
+        "expected_result": "회원 데이터의 local_code가 pt로 설정됨",
+        "priority": "High",
+        "screen": "Slide 4"
+      },
+      {
+        "id": "TC-04-013",
+        "test_case": "영어 상태에서 회원가입 시 local_code 설정",
+        "description": "?language=pt 파라미터 없이 회원가입 진행",
+        "expected_result": "회원 데이터의 local_code가 en으로 설정됨",
+        "priority": "High",
+        "screen": "Slide 4"
+      },
+      {
+        "id": "TC-04-014",
+        "test_case": "포르투갈 회원의 결제 데이터 트래킹",
+        "description": "local_code가 pt인 회원의 결제 진행",
+        "expected_result": "결제 데이터에 포르투갈 회원으로 트래킹됨",
+        "priority": "High",
+        "screen": "Slide 4"
+      },
+      {
+        "id": "TC-04-015",
+        "test_case": "포르투갈 URL 기준 결제 데이터 트래킹",
+        "description": "?language=pt 파라미터가 있는 URL에서 결제 진행",
+        "expected_result": "temp_access에서 URL에 ?language=pt가 포함되어 트래킹됨",
+        "priority": "High",
+        "screen": "Slide 4"
+      },
+      {
+        "id": "TC-04-016",
+        "test_case": "포르투갈 유입 경로 데이터 트래킹",
+        "description": "?language=pt를 통한 유입 경로 확인",
+        "expected_result": "temp_access.local_code가 pt로 설정되거나 URL에 ?language=pt가 포함됨",
+        "priority": "Medium",
+        "screen": "Slide 4"
+      },
+      {
+        "id": "TC-04-017",
+        "test_case": "잘못된 language 파라미터 처리",
+        "description": "language=invalid 등 잘못된 파라미터로 접근",
+        "expected_result": "기본 영어 UI로 표시되거나 에러 처리됨",
+        "priority": "Medium",
+        "screen": "Slide 4"
+      },
+      {
+        "id": "TC-04-018",
+        "test_case": "포르투갈 페이지 새로고침",
+        "description": "포르투갈 페이지에서 브라우저 새로고침",
+        "expected_result": "?language=pt 파라미터가 유지되고 포르투갈어 UI가 정상 표시됨",
+        "priority": "Medium",
+        "screen": "Slide 4"
+      },
+      {
+        "id": "TC-04-019",
+        "test_case": "포르투갈 페이지 뒤로가기/앞으로가기",
+        "description": "포르투갈 페이지에서 브라우저 뒤로가기/앞으로가기 버튼 사용",
+        "expected_result": "?language=pt 파라미터가 적절히 유지/제거되고 UI가 정상 표시됨",
+        "priority": "Medium",
+        "screen": "Slide 4"
+      },
+      {
+        "id": "TC-04-020",
+        "test_case": "포르투갈 페이지 URL 직접 입력",
+        "description": "포르투갈 페이지 URL을 주소창에 직접 입력하여 접근",
+        "expected_result": "포르투갈 페이지가 정상 로드되고 포르투갈어 UI가 표시됨",
+        "priority": "Medium",
+        "screen": "Slide 4"
+      },
+      {
+        "id": "TC-04-021",
+        "test_case": "존재하지 않는 포르투갈 작품 접근",
+        "description": "/novel/999999?language=pt와 같이 존재하지 않는 작품 ID로 접근",
+        "expected_result": "404 에러 페이지가 포르투갈어로 표시됨",
+        "priority": "Medium",
+        "screen": "Slide 4"
+      },
+      {
+        "id": "TC-04-022",
+        "test_case": "포르투갈 페이지 세션 만료",
+        "description": "포르투갈 페이지에서 세션 만료 시 처리",
+        "expected_result": "로그인 모달이 포르투갈어로 표시되고 ?language=pt 파라미터 유지",
+        "priority": "Medium",
+        "screen": "Slide 4"
+      },
+      {
+        "id": "TC-04-023",
+        "test_case": "포르투갈 페이지 네트워크 오류",
+        "description": "포르투갈 페이지 로딩 중 네트워크 오류 발생",
+        "expected_result": "에러 메시지가 포르투갈어로 표시됨",
+        "priority": "Low",
+        "screen": "Slide 4"
+      },
+      {
+        "id": "TC-04-024",
+        "test_case": "포르투갈 페이지 로딩 상태",
+        "description": "포르투갈 페이지 로딩 중 표시되는 로딩 스피너 또는 텍스트",
+        "expected_result": "로딩 관련 텍스트가 포르투갈어로 표시됨",
+        "priority": "Low",
+        "screen": "Slide 4"
+      },
+      {
+        "id": "TC-04-025",
+        "test_case": "포르투갈 페이지 빈 데이터 상태",
+        "description": "포르투갈 페이지에서 데이터가 없는 경우 처리",
+        "expected_result": "빈 데이터 관련 메시지가 포르투갈어로 표시됨",
+        "priority": "Low",
+        "screen": "Slide 4"
+      },
+      {
+        "id": "TC-04-026",
+        "test_case": "포르투갈 페이지 다중 탭 동시 접근",
+        "description": "여러 탭에서 동시에 포르투갈 페이지 접근",
+        "expected_result": "모든 탭에서 ?language=pt 파라미터가 정상 동작함",
+        "priority": "Low",
+        "screen": "Slide 4"
+      },
+      {
+        "id": "TC-04-027",
+        "test_case": "포르투갈 페이지 특수문자 포함 URL",
+        "description": "?language=pt와 함께 특수문자가 포함된 URL 파라미터 처리",
+        "expected_result": "특수문자가 적절히 인코딩/디코딩되고 포르투갈어 UI 정상 표시",
+        "priority": "Low",
+        "screen": "Slide 4"
+      },
+      {
+        "id": "TC-04-028",
+        "test_case": "포르투갈 페이지 캐시 처리",
+        "description": "포르투갈 페이지의 캐시 동작 확인",
+        "expected_result": "캐시된 콘텐츠도 포르투갈어로 정상 표시됨",
+        "priority": "Low",
+        "screen": "Slide 4"
+      },
+      {
+        "id": "TC-04-029",
+        "test_case": "포르투갈 페이지 타임아웃 처리",
+        "description": "포르투갈 페이지 요청 시 타임아웃 발생",
+        "expected_result": "타임아웃 에러 메시지가 포르투갈어로 표시됨",
+        "priority": "Low",
+        "screen": "Slide 4"
+      },
+      {
+        "id": "TC-04-030",
+        "test_case": "포르투갈 페이지 중복 파라미터 처리",
+        "description": "?language=pt&language=en과 같이 중복된 language 파라미터 처리",
+        "expected_result": "첫 번째 파라미터 값이 적용되거나 마지막 파라미터 값이 적용됨",
+        "priority": "Low",
+        "screen": "Slide 4"
+      },
+      {
+        "id": "TC-05-001",
+        "test_case": "포르투갈어 독자를 위한 서비스 확장 기본 접근",
+        "description": "글로벌 웹소설 플랫폼에서 포르투갈어 독자 대상 서비스 확장이 가능한지 확인",
+        "expected_result": "포르투갈어 독자를 위한 서비스가 정상적으로 제공됨",
+        "priority": "High",
+        "screen": "Slide 5"
+      },
+      {
+        "id": "TC-05-002",
+        "test_case": "기존 글로벌 콘텐츠 포르투갈어 현지화 제공",
+        "description": "기존 글로벌 콘텐츠가 포르투갈어로 현지화되어 제공되는지 확인",
+        "expected_result": "글로벌 콘텐츠가 포르투갈어로 현지화되어 정상 제공됨",
+        "priority": "High",
+        "screen": "Slide 5"
+      },
+      {
+        "id": "TC-05-003",
+        "test_case": "글로벌 트래픽 확대 효과 측정",
+        "description": "포르투갈어 서비스 확장을 통한 트래픽 확대 효과를 측정할 수 있는지 확인",
+        "expected_result": "트래픽 증가 지표를 정상적으로 확인 가능함",
+        "priority": "Medium",
+        "screen": "Slide 5"
+      },
+      {
+        "id": "TC-05-004",
+        "test_case": "기존 콘텐츠 재활용 기능성 확인",
+        "description": "기존 콘텐츠를 재활용하여 포르투갈어 콘텐츠로 확장할 수 있는지 확인",
+        "expected_result": "기존 콘텐츠가 포르투갈어 서비스에서 정상적으로 재활용됨",
+        "priority": "High",
+        "screen": "Slide 5"
+      },
+      {
+        "id": "TC-05-005",
+        "test_case": "특정 언어권 대상 서비스 운영 검증",
+        "description": "포르투갈어권 독자 대상으로 서비스가 정상적으로 운영되는지 확인",
+        "expected_result": "포르투갈어권 사용자에게 서비스가 정상적으로 제공됨",
+        "priority": "High",
+        "screen": "Slide 5"
+      },
+      {
+        "id": "TC-05-006",
+        "test_case": "글로벌 사용자 유입 가능성 검증",
+        "description": "포르투갈어 서비스를 통해 글로벌 사용자 유입이 가능한지 확인",
+        "expected_result": "포르투갈어 서비스로 신규 사용자 유입이 확인됨",
+        "priority": "Medium",
+        "screen": "Slide 5"
+      },
+      {
+        "id": "TC-05-007",
+        "test_case": "서비스 확장 가능성 검증",
+        "description": "포르투갈어 서비스를 통해 다른 언어권으로의 서비스 확장 가능성을 검증할 수 있는지 확인",
+        "expected_result": "서비스 확장 가능성에 대한 근거 데이터가 수집됨",
+        "priority": "Low",
+        "screen": "Slide 5"
+      },
+      {
+        "id": "TC-05-008",
+        "test_case": "GA 기준 포르투갈 7위 순위 데이터 확인",
+        "description": "Google Analytics 기준으로 포르투갈이 7위 순위를 차지하는지 데이터 확인",
+        "expected_result": "GA에서 포르투갈 순위가 7위로 정상 표시됨",
+        "priority": "Medium",
+        "screen": "Slide 5"
+      },
+      {
+        "id": "TC-05-009",
+        "test_case": "페이지 조회수 측정 기능",
+        "description": "페이지가 열린 횟수(조회수)가 정확히 측정되는지 확인",
+        "expected_result": "페이지 조회수가 정확히 카운팅됨",
+        "priority": "Medium",
+        "screen": "Slide 5"
+      },
+      {
+        "id": "TC-05-010",
+        "test_case": "총 가입자 수 데이터 정확성 확인",
+        "description": "총 가입자 148,427명 데이터가 정확한지 확인",
+        "expected_result": "총 가입자 수 148,427명이 정확히 표시됨",
+        "priority": "Low",
+        "screen": "Slide 5"
+      },
+      {
+        "id": "TC-05-011",
+        "test_case": "포르투갈+브라질 회원 수 데이터 정확성",
+        "description": "포르투갈+브라질 회원 3,741명(2.52%) 데이터가 정확한지 확인",
+        "expected_result": "포르투갈+브라질 회원 수가 3,741명(2.52%)으로 정확히 표시됨",
+        "priority": "Medium",
+        "screen": "Slide 5"
+      },
+      {
+        "id": "TC-05-012",
+        "test_case": "브라질 포르투갈어(pt-BR) 언어코드 적용",
+        "description": "서비스 언어가 브라질 포르투갈어(pt-BR)로 정상 적용되는지 확인",
+        "expected_result": "언어코드가 pt-BR로 정상 적용됨",
+        "priority": "High",
+        "screen": "Slide 5"
+      },
+      {
+        "id": "TC-05-013",
+        "test_case": "포르투갈어(pt) 언어코드 거부",
+        "description": "일반 포르투갈어(pt) 언어코드가 적용되지 않는지 확인",
+        "expected_result": "pt 언어코드는 적용되지 않고 pt-BR만 적용됨",
+        "priority": "Medium",
+        "screen": "Slide 5"
+      },
+      {
+        "id": "TC-05-014",
+        "test_case": "브라질 시장 우선순위 정책 적용",
+        "description": "브라질 포르투갈어가 포르투갈 포르투갈어보다 우선 적용되는지 확인",
+        "expected_result": "브라질 포르투갈어가 기본 언어로 적용됨",
+        "priority": "High",
+        "screen": "Slide 5"
+      },
+      {
+        "id": "TC-05-015",
+        "test_case": "브라질 인구 데이터 기반 언어 정책",
+        "description": "브라질 인구 약 2억 1천만 명 데이터를 기반으로 언어 정책이 적용되는지 확인",
+        "expected_result": "인구 데이터 기반으로 브라질 포르투갈어가 선택됨",
+        "priority": "Low",
+        "screen": "Slide 5"
+      },
+      {
+        "id": "TC-05-016",
+        "test_case": "포르투갈 인구 데이터 고려",
+        "description": "포르투갈 인구 약 1,000만 명 데이터가 언어 정책 결정에 고려되는지 확인",
+        "expected_result": "포르투갈 인구 데이터가 정책 결정에 반영됨",
+        "priority": "Low",
+        "screen": "Slide 5"
+      },
+      {
+        "id": "TC-05-017",
+        "test_case": "20배 이상 사용자 규모 차이 반영",
+        "description": "브라질이 포르투갈 대비 약 20배 이상의 사용자 규모를 가진다는 정보가 반영되는지 확인",
+        "expected_result": "사용자 규모 차이가 언어 정책에 정상 반영됨",
+        "priority": "Medium",
+        "screen": "Slide 5"
+      },
+      {
+        "id": "TC-05-018",
+        "test_case": "Netflix 글로벌 서비스 사례 참조",
+        "description": "Netflix의 브라질 포르투갈어 사용 사례가 참조되는지 확인",
+        "expected_result": "Netflix 사례가 언어 정책 근거로 활용됨",
+        "priority": "Low",
+        "screen": "Slide 5"
+      },
+      {
+        "id": "TC-05-019",
+        "test_case": "Amazon 글로벌 서비스 사례 참조",
+        "description": "Amazon의 브라질 포르투갈어 사용 사례가 참조되는지 확인",
+        "expected_result": "Amazon 사례가 언어 정책 근거로 활용됨",
+        "priority": "Low",
+        "screen": "Slide 5"
+      },
+      {
+        "id": "TC-05-020",
+        "test_case": "Spotify 글로벌 서비스 사례 참조",
+        "description": "Spotify의 브라질 포르투갈어 사용 사례가 참조되는지 확인",
+        "expected_result": "Spotify 사례가 언어 정책 근거로 활용됨",
+        "priority": "Low",
+        "screen": "Slide 5"
+      },
+      {
+        "id": "TC-05-021",
+        "test_case": "주요 글로벌 서비스 pt-BR 기본 언어 정책",
+        "description": "주요 글로벌 서비스들이 pt-BR을 기본 언어로 사용한다는 정책이 적용되는지 확인",
+        "expected_result": "글로벌 서비스 사례 기반 pt-BR 정책이 적용됨",
+        "priority": "Medium",
+        "screen": "Slide 5"
+      },
+      {
+        "id": "TC-05-022",
+        "test_case": "잘못된 언어코드 입력 처리",
+        "description": "pt-PT나 기타 잘못된 포르투갈어 언어코드 입력 시 처리 확인",
+        "expected_result": "잘못된 언어코드는 거부되고 pt-BR로 리다이렉트됨",
+        "priority": "Medium",
+        "screen": "Slide 5"
+      },
+      {
+        "id": "TC-05-023",
+        "test_case": "언어 정책 변경 시 기존 데이터 처리",
+        "description": "언어 정책이 변경될 때 기존 사용자 데이터가 올바르게 처리되는지 확인",
+        "expected_result": "기존 데이터가 새로운 언어 정책에 맞게 업데이트됨",
+        "priority": "High",
+        "screen": "Slide 5"
+      },
+      {
+        "id": "TC-05-024",
+        "test_case": "언어 정책 적용 범위 확인",
+        "description": "브라질 포르투갈어 정책이 모든 서비스 영역에 일관되게 적용되는지 확인",
+        "expected_result": "모든 서비스 영역에서 pt-BR이 일관되게 적용됨",
+        "priority": "High",
+        "screen": "Slide 5"
+      },
+      {
+        "id": "TC-05-025",
+        "test_case": "언어 정책 예외 상황 처리",
+        "description": "언어 정책 적용이 불가능한 예외 상황에서의 처리 방식 확인",
+        "expected_result": "예외 상황에서 적절한 대안 언어나 에러 처리가 이루어짐",
+        "priority": "Medium",
+        "screen": "Slide 5"
+      },
+      {
+        "id": "TC-06-001",
+        "test_case": "1안 전체 번역 API 방식 검증",
+        "description": "1안(전체 번역 API) 방식이 선택되지 않았음을 확인",
+        "expected_result": "1안은 개발하지 않고 2안으로만 진행됨이 확인되어야 함",
+        "priority": "High",
+        "screen": "Slide 6"
+      },
+      {
+        "id": "TC-06-002",
+        "test_case": "2안 포르투갈 특화 방식 적용 확인",
+        "description": "2안(포르투갈 특화) 방식이 정상적으로 적용되는지 확인",
+        "expected_result": "주요 6개 페이지에서만 UI 번역이 적용되고, 콘텐츠는 AI 번역이 적용되어야 함",
+        "priority": "High",
+        "screen": "Slide 6"
+      },
+      {
+        "id": "TC-06-003",
+        "test_case": "UI 번역 범위 확인",
+        "description": "UI 번역이 적용되는 6개 페이지 확인",
+        "expected_result": "인트로, 회차리스트, 뷰어, 로그인/회원가입, 결제모달, 플랜 페이지에서만 UI가 포르투갈어로 표시되어야 함",
+        "priority": "High",
+        "screen": "Slide 6"
+      },
+      {
+        "id": "TC-06-004",
+        "test_case": "번역 방식별 품질 비교",
+        "description": "1안 자동번역과 2안 일괄변경 방식의 품질 차이 확인",
+        "expected_result": "2안이 더 안정적인 UI 번역 품질을 제공해야 함",
+        "priority": "Medium",
+        "screen": "Slide 6"
+      },
+      {
+        "id": "TC-06-005",
+        "test_case": "콘텐츠 번역 방식 확인",
+        "description": "콘텐츠 번역이 AI 번역으로 처리되는지 확인",
+        "expected_result": "자동번역이 아닌 AI 번역이 적용되어 상대적으로 안정적인 품질을 제공해야 함",
+        "priority": "High",
+        "screen": "Slide 6"
+      },
+      {
+        "id": "TC-06-006",
+        "test_case": "적용 범위 제한 확인",
+        "description": "포르투갈 특화 페이지에서만 번역이 적용되는지 확인",
+        "expected_result": "전체 사이트가 아닌 지정된 6개 페이지에서만 번역이 적용되어야 함",
+        "priority": "High",
+        "screen": "Slide 6"
+      },
+      {
+        "id": "TC-06-007",
+        "test_case": "번역 품질 안정성 검증",
+        "description": "고유명사나 인칭 번역 문제가 개선되었는지 확인",
+        "expected_result": "1안 대비 번역 품질이 안정적이고 고유명사/인칭 번역 오류가 감소해야 함",
+        "priority": "Medium",
+        "screen": "Slide 6"
+      },
+      {
+        "id": "TC-06-008",
+        "test_case": "운영 공수 확인",
+        "description": "초기 UI 문구 검수 작업이 필요한지 확인",
+        "expected_result": "초기 UI 문구 검수가 필요하며, 이후 운영 공수는 최소화되어야 함",
+        "priority": "Medium",
+        "screen": "Slide 6"
+      },
+      {
+        "id": "TC-06-009",
+        "test_case": "언어 확장성 제한 확인",
+        "description": "언어 추가 시 추가 작업이 필요한지 확인",
+        "expected_result": "새 언어 추가 시 콘텐츠 번역 및 일부 UI 검수 작업이 필요함이 확인되어야 함",
+        "priority": "Low",
+        "screen": "Slide 6"
+      },
+      {
+        "id": "TC-06-010",
+        "test_case": "UX 안정성 개선 확인",
+        "description": "UI 깨짐 현상이 개선되었는지 확인",
+        "expected_result": "주요 UI 수정이 가능하여 1안 대비 UX 안정성이 높아야 함",
+        "priority": "High",
+        "screen": "Slide 6"
+      },
+      {
+        "id": "TC-06-011",
+        "test_case": "서비스 목적 달성 확인",
+        "description": "포르투갈 타겟 파일럿 운영 목적에 부합하는지 확인",
+        "expected_result": "빠른 다국어 노출보다는 특정 언어 타겟 파일럿 운영에 적합해야 함",
+        "priority": "Medium",
+        "screen": "Slide 6"
+      },
+      {
+        "id": "TC-06-012",
+        "test_case": "의사결정 기준 검증",
+        "description": "속도/개발 가능여부/퀄리티 기준으로 2안이 선택되었는지 확인",
+        "expected_result": "종합적인 기준 평가 결과 2안이 최적임이 검증되어야 함",
+        "priority": "Medium",
+        "screen": "Slide 6"
+      },
+      {
+        "id": "TC-06-013",
+        "test_case": "번역 API 비용 이슈 해결",
+        "description": "1안의 기하급수적 비용 증가 문제가 2안에서 해결되었는지 확인",
+        "expected_result": "사용자 단위 번역 요청 구조에서 벗어나 비용 효율성이 개선되어야 함",
+        "priority": "High",
+        "screen": "Slide 6"
+      },
+      {
+        "id": "TC-06-014",
+        "test_case": "개발 기간 단축 확인",
+        "description": "번역 API 계약 및 세팅 기간이 불필요해졌는지 확인",
+        "expected_result": "번역 API 계약 없이도 서비스 개발이 가능해야 함",
+        "priority": "Medium",
+        "screen": "Slide 6"
+      },
+      {
+        "id": "TC-06-015",
+        "test_case": "UI 깨짐 수정 프로세스 확인",
+        "description": "UI 깨지는 부분을 건바이건으로 수정하는 프로세스가 정의되었는지 확인",
+        "expected_result": "UI 깨짐 발생 시 개별적으로 수정할 수 있는 프로세스가 마련되어야 함",
+        "priority": "Medium",
+        "screen": "Slide 6"
+      },
+      {
+        "id": "TC-09-001",
+        "test_case": "Block 1 인트로 페이지 오픈 검증",
+        "description": "Block 1에 포함된 인트로 페이지가 정상적으로 오픈되는지 검증",
+        "expected_result": "인트로 페이지가 정상적으로 표시되고 기본 기능이 동작함",
+        "priority": "High",
+        "screen": "Slide 9"
+      },
+      {
+        "id": "TC-09-002",
+        "test_case": "Block 1 작품 콘텐츠 번역 정확성 검증",
+        "description": "작품명, 줄거리, 회차 제목, 소설 본문이 포르투갈어로 번역되어 표시되는지 검증",
+        "expected_result": "모든 작품 콘텐츠가 포르투갈어로 정확히 번역되어 표시됨",
+        "priority": "High",
+        "screen": "Slide 9"
+      },
+      {
+        "id": "TC-09-003",
+        "test_case": "Block 2 회차 리스트 UI 번역 검증",
+        "description": "회차 리스트 페이지의 UI가 포르투갈어로 번역되어 표시되는지 검증",
+        "expected_result": "회차 리스트의 모든 UI 요소가 포르투갈어로 표시됨",
+        "priority": "High",
+        "screen": "Slide 9"
+      },
+      {
+        "id": "TC-09-004",
+        "test_case": "Block 2 뷰어 UI 번역 검증",
+        "description": "뷰어 페이지의 UI가 포르투갈어로 번역되어 표시되는지 검증",
+        "expected_result": "뷰어의 모든 UI 요소가 포르투갈어로 표시됨",
+        "priority": "High",
+        "screen": "Slide 9"
+      },
+      {
+        "id": "TC-09-005",
+        "test_case": "Block 2 로그인/회원가입 UI 번역 검증",
+        "description": "로그인/회원가입 페이지의 UI가 포르투갈어로 번역되어 표시되는지 검증",
+        "expected_result": "로그인/회원가입의 모든 UI 요소가 포르투갈어로 표시됨",
+        "priority": "High",
+        "screen": "Slide 9"
+      },
+      {
+        "id": "TC-09-006",
+        "test_case": "Block 3 결제 모달 UI 번역 검증",
+        "description": "결제 모달의 UI가 포르투갈어로 번역되어 표시되는지 검증",
+        "expected_result": "결제 모달의 모든 UI 요소가 포르투갈어로 표시됨",
+        "priority": "High",
+        "screen": "Slide 9"
+      },
+      {
+        "id": "TC-09-007",
+        "test_case": "Block 3 플랜 페이지 UI 번역 검증",
+        "description": "플랜 페이지의 UI가 포르투갈어로 번역되어 표시되는지 검증",
+        "expected_result": "플랜 페이지의 모든 UI 요소가 포르투갈어로 표시됨",
+        "priority": "High",
+        "screen": "Slide 9"
+      },
+      {
+        "id": "TC-09-008",
+        "test_case": "Block 3 내서재 기능 검증",
+        "description": "내서재 기능이 정상적으로 동작하는지 검증",
+        "expected_result": "내서재의 모든 기능이 정상적으로 동작함",
+        "priority": "High",
+        "screen": "Slide 9"
+      },
+      {
+        "id": "TC-09-009",
+        "test_case": "디자인 완료 일정 준수 검증",
+        "description": "12일~17일 디자인 작업이 일정대로 완료되었는지 검증",
+        "expected_result": "17일까지 모든 디자인 작업이 완료됨",
+        "priority": "High",
+        "screen": "Slide 9"
+      },
+      {
+        "id": "TC-09-010",
+        "test_case": "개발 완료 일정 준수 검증",
+        "description": "18일~20일 개발 작업이 일정대로 완료되었는지 검증",
+        "expected_result": "20일까지 모든 개발 작업이 완료됨",
+        "priority": "High",
+        "screen": "Slide 9"
+      },
+      {
+        "id": "TC-09-011",
+        "test_case": "테스트 일정 준수 검증",
+        "description": "20일, 23일 테스트가 일정대로 진행되는지 검증",
+        "expected_result": "예정된 테스트 일정이 준수됨",
+        "priority": "High",
+        "screen": "Slide 9"
+      },
+      {
+        "id": "TC-09-012",
+        "test_case": "3월 24일 오픈 목표 달성 검증",
+        "description": "3월 24일(화) 오픈 목표가 달성 가능한지 검증",
+        "expected_result": "24일 정상 오픈이 가능함",
+        "priority": "High",
+        "screen": "Slide 9"
+      },
+      {
+        "id": "TC-09-013",
+        "test_case": "Block별 의존성 검증",
+        "description": "Block 1, 2, 3의 순차적 의존성이 올바르게 설정되었는지 검증",
+        "expected_result": "각 Block간 의존성이 올바르게 관리됨",
+        "priority": "Medium",
+        "screen": "Slide 9"
+      },
+      {
+        "id": "TC-09-014",
+        "test_case": "UI 번역 포함 오픈 범위 검증",
+        "description": "UI 번역이 포함된 범위가 정확히 구현되었는지 검증",
+        "expected_result": "명시된 UI 번역 범위가 모두 구현됨",
+        "priority": "High",
+        "screen": "Slide 9"
+      },
+      {
+        "id": "TC-09-015",
+        "test_case": "디자인 작업물 품질 검증",
+        "description": "디자인 작업물이 요구사항을 만족하는지 검증",
+        "expected_result": "디자인 작업물이 기획 요구사항을 충족함",
+        "priority": "Medium",
+        "screen": "Slide 9"
+      },
+      {
+        "id": "TC-09-016",
+        "test_case": "개발 작업물 품질 검증",
+        "description": "개발 작업물이 요구사항을 만족하는지 검증",
+        "expected_result": "개발 작업물이 기획 요구사항을 충족함",
+        "priority": "High",
+        "screen": "Slide 9"
+      },
+      {
+        "id": "TC-09-017",
+        "test_case": "최소 범위(Block 1) 기능 검증",
+        "description": "최소 범위로 정의된 Block 1의 모든 기능이 정상 동작하는지 검증",
+        "expected_result": "Block 1의 모든 기능이 정상적으로 동작함",
+        "priority": "High",
+        "screen": "Slide 9"
+      },
+      {
+        "id": "TC-09-018",
+        "test_case": "일정 지연 시 대응 방안 검증",
+        "description": "일정 지연 발생 시 대응 방안이 마련되어 있는지 검증",
+        "expected_result": "일정 지연에 대한 대응 방안이 존재함",
+        "priority": "Medium",
+        "screen": "Slide 9"
+      },
+      {
+        "id": "TC-09-019",
+        "test_case": "테스트 환경 구성 검증",
+        "description": "20일, 23일 테스트를 위한 환경이 올바르게 구성되었는지 검증",
+        "expected_result": "테스트 환경이 정상적으로 구성됨",
+        "priority": "High",
+        "screen": "Slide 9"
+      },
+      {
+        "id": "TC-09-020",
+        "test_case": "오픈 준비 상태 검증",
+        "description": "24일 오픈을 위한 모든 준비사항이 완료되었는지 검증",
+        "expected_result": "오픈을 위한 모든 준비사항이 완료됨",
+        "priority": "High",
+        "screen": "Slide 9"
+      },
+      {
+        "id": "TC-10-001",
+        "test_case": "포르투갈 번역 작품 50작 리스트 파일 다운로드",
+        "description": "포도아 50작_포르투갈 작품.xlsx 파일을 정상적으로 다운로드할 수 있는지 확인",
+        "expected_result": "엑셀 파일이 정상적으로 다운로드되고 파일이 손상되지 않음",
+        "priority": "High",
+        "screen": "Slide 10"
+      },
+      {
+        "id": "TC-10-002",
+        "test_case": "포르투갈 번역 작품 리스트 파일 내용 검증",
+        "description": "다운로드된 엑셀 파일에 포르투갈 번역 작품 50개가 모두 포함되어 있는지 확인",
+        "expected_result": "엑셀 파일에 총 50개의 포르투갈 번역 작품 정보가 정확히 기재됨",
+        "priority": "High",
+        "screen": "Slide 10"
+      },
+      {
+        "id": "TC-10-003",
+        "test_case": "엑셀 파일 형식 호환성 검증",
+        "description": "다운로드된 엑셀 파일이 다양한 버전의 Excel에서 정상 오픈되는지 확인",
+        "expected_result": "Excel 2016, 2019, 2021, Excel Online에서 모두 정상적으로 열림",
+        "priority": "Medium",
+        "screen": "Slide 10"
+      },
+      {
+        "id": "TC-10-004",
+        "test_case": "포르투갈 번역 작품 데이터 정확성 검증",
+        "description": "엑셀 파일 내 작품 정보가 실제 서비스의 포르투갈 번역 작품과 일치하는지 확인",
+        "expected_result": "작품 번호, 제목, 번역 상태 등 모든 정보가 실제 서비스와 일치함",
+        "priority": "High",
+        "screen": "Slide 10"
+      },
+      {
+        "id": "TC-10-005",
+        "test_case": "파일명 한글 인코딩 검증",
+        "description": "한글이 포함된 파일명이 다양한 OS 환경에서 정상적으로 표시되는지 확인",
+        "expected_result": "Windows, Mac, Linux 환경에서 모두 파일명이 깨지지 않고 정상 표시됨",
+        "priority": "Medium",
+        "screen": "Slide 10"
+      },
+      {
+        "id": "TC-10-006",
+        "test_case": "파일 다운로드 권한 검증",
+        "description": "적절한 권한을 가진 사용자만 파일을 다운로드할 수 있는지 확인",
+        "expected_result": "권한이 없는 사용자는 파일 다운로드가 차단되고 적절한 오류 메시지 표시",
+        "priority": "High",
+        "screen": "Slide 10"
+      },
+      {
+        "id": "TC-10-007",
+        "test_case": "파일 크기 및 용량 검증",
+        "description": "엑셀 파일 크기가 적절한 범위 내에 있는지 확인",
+        "expected_result": "파일 크기가 50개 작품 정보에 적합한 범위 내에 있고 과도하게 크지 않음",
+        "priority": "Low",
+        "screen": "Slide 10"
+      },
+      {
+        "id": "TC-10-008",
+        "test_case": "동시 다운로드 요청 처리",
+        "description": "여러 사용자가 동시에 파일을 다운로드 요청했을 때 정상 처리되는지 확인",
+        "expected_result": "동시 다운로드 요청에도 각각 정상적으로 파일이 제공됨",
+        "priority": "Medium",
+        "screen": "Slide 10"
+      },
+      {
+        "id": "TC-10-009",
+        "test_case": "네트워크 오류 시 파일 다운로드",
+        "description": "네트워크가 불안정한 상황에서 파일 다운로드를 시도했을 때 처리 방식 확인",
+        "expected_result": "네트워크 오류 시 적절한 에러 메시지가 표시되거나 재시도 옵션이 제공됨",
+        "priority": "Medium",
+        "screen": "Slide 10"
+      },
+      {
+        "id": "TC-10-010",
+        "test_case": "파일 다운로드 로그 기록",
+        "description": "파일 다운로드 시 적절한 로그가 기록되는지 확인",
+        "expected_result": "다운로드 시간, 사용자 정보, 파일명 등이 로그에 정확히 기록됨",
+        "priority": "Low",
+        "screen": "Slide 10"
+      },
+      {
+        "id": "TC-10-011",
+        "test_case": "브라우저 호환성 검증",
+        "description": "다양한 브라우저에서 파일 다운로드가 정상적으로 작동하는지 확인",
+        "expected_result": "Chrome, Firefox, Safari, Edge에서 모두 정상적으로 파일 다운로드됨",
+        "priority": "Medium",
+        "screen": "Slide 10"
+      },
+      {
+        "id": "TC-10-012",
+        "test_case": "모바일 환경 파일 다운로드",
+        "description": "모바일 디바이스에서 엑셀 파일 다운로드가 정상적으로 작동하는지 확인",
+        "expected_result": "iOS, Android 환경에서 파일이 정상적으로 다운로드되고 열람 가능함",
+        "priority": "Medium",
+        "screen": "Slide 10"
+      },
+      {
+        "id": "TC-10-013",
+        "test_case": "파일 무결성 검증",
+        "description": "다운로드된 파일이 원본과 동일한지 체크섬으로 확인",
+        "expected_result": "다운로드된 파일의 체크섬이 원본 파일과 일치함",
+        "priority": "High",
+        "screen": "Slide 10"
+      },
+      {
+        "id": "TC-10-014",
+        "test_case": "대용량 트래픽 시 파일 다운로드 성능",
+        "description": "서버 부하가 높은 상황에서도 파일 다운로드가 정상적으로 처리되는지 확인",
+        "expected_result": "서버 부하 상황에서도 합리적인 시간 내에 파일 다운로드가 완료됨",
+        "priority": "Medium",
+        "screen": "Slide 10"
+      },
+      {
+        "id": "TC-10-015",
+        "test_case": "파일 다운로드 보안 검증",
+        "description": "파일 다운로드 시 보안 위험 요소가 없는지 확인",
+        "expected_result": "파일에 악성 코드나 매크로가 포함되지 않았고 안전한 상태로 제공됨",
+        "priority": "High",
+        "screen": "Slide 10"
+      },
+      {
+        "id": "TC-12-001",
+        "test_case": "포르투갈어 파라미터 정상 동작 확인",
+        "description": "?language=pt 파라미터가 있는 인트로 페이지 접근 시 포르투갈어로 표시 확인",
+        "expected_result": "인트로 페이지의 모든 UI 텍스트가 포르투갈어로 표시됨",
+        "priority": "High",
+        "screen": "Slide 12"
+      },
+      {
+        "id": "TC-12-002",
+        "test_case": "포르투갈어 파라미터 없이 접근",
+        "description": "?language=pt 파라미터 없이 인트로 페이지 접근",
+        "expected_result": "인트로 페이지의 모든 UI 텍스트가 영어로 표시됨",
+        "priority": "High",
+        "screen": "Slide 12"
+      },
+      {
+        "id": "TC-12-003",
+        "test_case": "헤더 메뉴 언어 유지 확인",
+        "description": "?language=pt 파라미터 있을 때 헤더 메뉴 언어 확인",
+        "expected_result": "헤더 메뉴는 영어로 유지됨",
+        "priority": "High",
+        "screen": "Slide 12"
+      },
+      {
+        "id": "TC-12-004",
+        "test_case": "포르투갈 작품만 노출 확인",
+        "description": "인트로 페이지에서 작품 리스트 확인",
+        "expected_result": "포르투갈 번역 작품만 노출되고 글로벌 작품은 노출되지 않음",
+        "priority": "High",
+        "screen": "Slide 12"
+      },
+      {
+        "id": "TC-12-005",
+        "test_case": "작품 클릭 시 회차 리스트 이동",
+        "description": "인트로 페이지에서 작품 클릭",
+        "expected_result": "해당 작품의 회차 리스트 페이지로 이동하며 ?language=pt 파라미터 유지됨",
+        "priority": "High",
+        "screen": "Slide 12"
+      },
+      {
+        "id": "TC-12-006",
+        "test_case": "잘못된 language 파라미터 처리",
+        "description": "?language=invalid 같은 잘못된 파라미터로 접근",
+        "expected_result": "기본값인 영어로 표시되거나 적절한 오류 처리",
+        "priority": "Medium",
+        "screen": "Slide 12"
+      },
+      {
+        "id": "TC-12-007",
+        "test_case": "빈 language 파라미터 처리",
+        "description": "?language= 빈 값으로 파라미터 전달",
+        "expected_result": "기본값인 영어로 표시됨",
+        "priority": "Medium",
+        "screen": "Slide 12"
+      },
+      {
+        "id": "TC-12-008",
+        "test_case": "대소문자 구분 확인",
+        "description": "?language=PT, ?language=Pt 등 대소문자 다르게 접근",
+        "expected_result": "정의된 규칙에 따라 일관되게 처리됨",
+        "priority": "Medium",
+        "screen": "Slide 12"
+      },
+      {
+        "id": "TC-12-009",
+        "test_case": "특수문자 포함 파라미터",
+        "description": "?language=pt&test=123 등 추가 파라미터와 함께 접근",
+        "expected_result": "language=pt만 인식하여 정상 동작함",
+        "priority": "Medium",
+        "screen": "Slide 12"
+      },
+      {
+        "id": "TC-12-010",
+        "test_case": "글로벌 페이지로 이동 시 파라미터 제거",
+        "description": "인트로 페이지에서 랭킹, 검색 등 글로벌 페이지로 이동",
+        "expected_result": "?language=pt 파라미터가 제거되고 영어로 표시됨",
+        "priority": "High",
+        "screen": "Slide 12"
+      },
+      {
+        "id": "TC-12-011",
+        "test_case": "페이지 새로고침",
+        "description": "?language=pt 상태에서 인트로 페이지 새로고침",
+        "expected_result": "포르투갈어 상태 유지됨",
+        "priority": "High",
+        "screen": "Slide 12"
+      },
+      {
+        "id": "TC-12-012",
+        "test_case": "브라우저 뒒로가기/앞으로가기",
+        "description": "다른 페이지 갔다가 브라우저 뒤로가기로 인트로 페이지 복귀",
+        "expected_result": "?language=pt 파라미터와 포르투갈어 상태 유지됨",
+        "priority": "Medium",
+        "screen": "Slide 12"
+      },
+      {
+        "id": "TC-12-013",
+        "test_case": "로그인 버튼 클릭",
+        "description": "?language=pt 상태에서 로그인 버튼 클릭",
+        "expected_result": "로그인 페이지로 이동하며 ?language=pt 파라미터 유지되고 포르투갈어 UI 표시",
+        "priority": "High",
+        "screen": "Slide 12"
+      },
+      {
+        "id": "TC-12-014",
+        "test_case": "회원가입 버튼 클릭",
+        "description": "?language=pt 상태에서 회원가입 버튼 클릭",
+        "expected_result": "회원가입 페이지로 이동하며 ?language=pt 파라미터 유지되고 포르투갈어 UI 표시",
+        "priority": "High",
+        "screen": "Slide 12"
+      },
+      {
+        "id": "TC-12-015",
+        "test_case": "검색 기능 접근",
+        "description": "인트로 페이지에서 검색 기능 접근",
+        "expected_result": "검색 페이지는 글로벌 서비스이므로 ?language=pt 파라미터 제거되고 영어로 표시",
+        "priority": "High",
+        "screen": "Slide 12"
+      },
+      {
+        "id": "TC-12-016",
+        "test_case": "내서재 접근",
+        "description": "인트로 페이지에서 내서재 접근",
+        "expected_result": "내서재는 글로벌 서비스이므로 ?language=pt 파라미터 제거되고 영어로 표시",
+        "priority": "High",
+        "screen": "Slide 12"
+      },
+      {
+        "id": "TC-12-017",
+        "test_case": "UI 텍스트 번역 완성도 확인",
+        "description": "모든 UI 요소의 포르투갈어 번역 상태 확인",
+        "expected_result": "모든 UI 텍스트가 올바른 포르투갈어로 번역되어 표시됨",
+        "priority": "High",
+        "screen": "Slide 12"
+      },
+      {
+        "id": "TC-12-018",
+        "test_case": "긴 텍스트 UI 깨짐 확인",
+        "description": "포르투갈어로 번역된 긴 텍스트가 있는 UI 요소 확인",
+        "expected_result": "긴 텍스트도 UI 레이아웃을 깨뜨리지 않고 정상 표시됨",
+        "priority": "Medium",
+        "screen": "Slide 12"
+      },
+      {
+        "id": "TC-12-019",
+        "test_case": "특수문자 포함 번역 텍스트",
+        "description": "포르투갈어 특수문자(ã, ç, õ 등)가 포함된 텍스트 표시 확인",
+        "expected_result": "포르투갈어 특수문자가 정상적으로 표시됨",
+        "priority": "Medium",
+        "screen": "Slide 12"
+      },
+      {
+        "id": "TC-12-020",
+        "test_case": "페이지 로딩 시간 확인",
+        "description": "?language=pt 파라미터 있을 때와 없을 때 로딩 시간 비교",
+        "expected_result": "번역 처리로 인한 현저한 성능 저하 없음",
+        "priority": "Medium",
+        "screen": "Slide 12"
+      },
+      {
+        "id": "TC-12-021",
+        "test_case": "동시 접근 테스트",
+        "description": "여러 사용자가 동시에 ?language=pt로 접근",
+        "expected_result": "모든 사용자에게 정상적으로 포르투갈어 페이지 제공됨",
+        "priority": "Medium",
+        "screen": "Slide 12"
+      },
+      {
+        "id": "TC-12-022",
+        "test_case": "세션 만료 후 접근",
+        "description": "세션 만료된 상태에서 ?language=pt로 접근",
+        "expected_result": "포르투갈어 인트로 페이지 정상 표시됨",
+        "priority": "Medium",
+        "screen": "Slide 12"
+      },
+      {
+        "id": "TC-12-023",
+        "test_case": "모바일 환경 테스트",
+        "description": "모바일 브라우저에서 ?language=pt로 접근",
+        "expected_result": "모바일에서도 포르투갈어 UI 정상 표시됨",
+        "priority": "High",
+        "screen": "Slide 12"
+      },
+      {
+        "id": "TC-12-024",
+        "test_case": "태블릿 환경 테스트",
+        "description": "태블릿에서 ?language=pt로 접근",
+        "expected_result": "태블릿에서도 포르투갈어 UI 정상 표시됨",
+        "priority": "Medium",
+        "screen": "Slide 12"
+      },
+      {
+        "id": "TC-12-025",
+        "test_case": "다양한 브라우저 호환성",
+        "description": "Chrome, Firefox, Safari, Edge에서 ?language=pt 접근",
+        "expected_result": "모든 브라우저에서 포르투갈어 페이지 정상 동작",
+        "priority": "High",
+        "screen": "Slide 12"
+      },
+      {
+        "id": "TC-12-026",
+        "test_case": "URL 직접 입력",
+        "description": "주소창에 직접 인트로 페이지 URL + ?language=pt 입력",
+        "expected_result": "포르투갈어 인트로 페이지 정상 표시됨",
+        "priority": "High",
+        "screen": "Slide 12"
+      },
+      {
+        "id": "TC-12-027",
+        "test_case": "북마크 기능",
+        "description": "?language=pt 상태의 인트로 페이지 북마크 후 재접근",
+        "expected_result": "북마크를 통해 접근 시에도 포르투갈어 상태 유지됨",
+        "priority": "Medium",
+        "screen": "Slide 12"
+      },
+      {
+        "id": "TC-12-028",
+        "test_case": "공유 링크 기능",
+        "description": "?language=pt 상태의 인트로 페이지 링크 공유",
+        "expected_result": "공유된 링크로 접근 시 포르투갈어 페이지 표시됨",
+        "priority": "Medium",
+        "screen": "Slide 12"
+      },
+      {
+        "id": "TC-12-029",
+        "test_case": "네트워크 오류 상황",
+        "description": "네트워크 불안정 상황에서 ?language=pt로 접근",
+        "expected_result": "적절한 오류 메시지 표시 및 복구 가능",
+        "priority": "Medium",
+        "screen": "Slide 12"
+      },
+      {
+        "id": "TC-12-030",
+        "test_case": "서버 오류 상황",
+        "description": "서버 오류 상황에서 ?language=pt로 접근",
+        "expected_result": "적절한 오류 페이지 표시",
+        "priority": "Low",
+        "screen": "Slide 12"
+      },
+      {
+        "id": "TC-12-031",
+        "test_case": "캐시 무효화 테스트",
+        "description": "브라우저 캐시 삭제 후 ?language=pt로 접근",
+        "expected_result": "캐시 없이도 포르투갈어 페이지 정상 로드됨",
+        "priority": "Medium",
+        "screen": "Slide 12"
+      },
+      {
+        "id": "TC-12-032",
+        "test_case": "JavaScript 비활성화 환경",
+        "description": "JavaScript 비활성화 상태에서 ?language=pt 접근",
+        "expected_result": "기본 기능은 동작하거나 적절한 안내 메시지 표시",
+        "priority": "Low",
+        "screen": "Slide 12"
+      },
+      {
+        "id": "TC-12-033",
+        "test_case": "작품 정보 포르투갈어 번역 확인",
+        "description": "인트로 페이지의 작품 제목, 설명 등이 포르투갈어로 번역되어 표시되는지 확인",
+        "expected_result": "작품 관련 모든 텍스트가 포르투갈어로 표시됨",
+        "priority": "High",
+        "screen": "Slide 12"
+      },
+      {
+        "id": "TC-12-034",
+        "test_case": "빈 작품 리스트 처리",
+        "description": "포르투갈 번역 작품이 없는 경우",
+        "expected_result": "적절한 빈 상태 메시지가 포르투갈어로 표시됨",
+        "priority": "Medium",
+        "screen": "Slide 12"
+      },
+      {
+        "id": "TC-12-035",
+        "test_case": "페이지네이션 기능",
+        "description": "작품 목록이 많을 때 페이지네이션 동작 확인",
+        "expected_result": "페이지네이션도 ?language=pt 파라미터 유지하며 포르투갈어 UI로 동작",
+        "priority": "Medium",
+        "screen": "Slide 12"
+      },
+      {
+        "id": "TC-15-001",
+        "test_case": "포르투갈 인트로 페이지 정상 접근",
+        "description": "global.novelpia.com/intro?language=pt URL로 접근 시 포르투갈 인트로 페이지 정상 로드",
+        "expected_result": "포르투갈 인트로 페이지가 포르투갈어 UI로 정상 표시",
+        "priority": "High",
+        "screen": "Slide 15"
+      },
+      {
+        "id": "TC-15-002",
+        "test_case": "URL 파라미터 없이 인트로 페이지 접근",
+        "description": "/intro (language 파라미터 없음)로 접근",
+        "expected_result": "영어 UI로 표시되며 포르투갈 콘텐츠 노출되지 않음",
+        "priority": "High",
+        "screen": "Slide 15"
+      },
+      {
+        "id": "TC-15-003",
+        "test_case": "잘못된 language 파라미터 처리",
+        "description": "?language=kr, ?language=invalid 등 잘못된 값으로 접근",
+        "expected_result": "기본 영어 UI로 표시 또는 에러 처리",
+        "priority": "Medium",
+        "screen": "Slide 15"
+      },
+      {
+        "id": "TC-15-004",
+        "test_case": "PC 브라우저에서 반응형 레이아웃",
+        "description": "데스크톱 해상도에서 페이지 레이아웃 확인",
+        "expected_result": "PC용 레이아웃으로 정상 표시",
+        "priority": "High",
+        "screen": "Slide 15"
+      },
+      {
+        "id": "TC-15-005",
+        "test_case": "모바일 브라우저에서 반응형 레이아웃",
+        "description": "모바일 해상도에서 페이지 레이아웃 확인",
+        "expected_result": "모바일용 레이아웃으로 정상 표시",
+        "priority": "High",
+        "screen": "Slide 15"
+      },
+      {
+        "id": "TC-15-006",
+        "test_case": "태블릿 브라우저에서 반응형 레이아웃",
+        "description": "태블릿 해상도에서 페이지 레이아웃 확인",
+        "expected_result": "적절한 태블릿용 레이아웃으로 표시",
+        "priority": "Medium",
+        "screen": "Slide 15"
+      },
+      {
+        "id": "TC-15-007",
+        "test_case": "헤더 메뉴 언어 정책 확인",
+        "description": "?language=pt 상태에서 헤더 메뉴 언어 확인",
+        "expected_result": "헤더 메뉴는 영문으로 유지",
+        "priority": "High",
+        "screen": "Slide 15"
+      },
+      {
+        "id": "TC-15-008",
+        "test_case": "포르투갈 작품 리스트 표시",
+        "description": "인트로 페이지에서 포르투갈 번역 작품들 표시 확인",
+        "expected_result": "포르투갈 번역된 작품만 노출",
+        "priority": "High",
+        "screen": "Slide 15"
+      },
+      {
+        "id": "TC-15-009",
+        "test_case": "작품 제목 포르투갈어 번역 확인",
+        "description": "표시된 작품들의 제목이 포르투갈어로 번역되어 있는지 확인",
+        "expected_result": "작품 제목이 포르투갈어로 표시",
+        "priority": "High",
+        "screen": "Slide 15"
+      },
+      {
+        "id": "TC-15-010",
+        "test_case": "작품 설명 포르투갈어 번역 확인",
+        "description": "작품 설명/시놉시스가 포르투갈어로 번역되어 있는지 확인",
+        "expected_result": "작품 설명이 포르투갈어로 표시",
+        "priority": "High",
+        "screen": "Slide 15"
+      },
+      {
+        "id": "TC-15-011",
+        "test_case": "작품 클릭 시 회차 리스트 이동",
+        "description": "포르투갈 작품 클릭 시 회차 리스트 페이지 이동",
+        "expected_result": "/novel/123?language=pt 형태 URL로 이동",
+        "priority": "High",
+        "screen": "Slide 15"
+      },
+      {
+        "id": "TC-15-012",
+        "test_case": "로그인 버튼 클릭",
+        "description": "인트로 페이지에서 로그인 버튼 클릭",
+        "expected_result": "포르투갈어 로그인 모달 표시",
+        "priority": "High",
+        "screen": "Slide 15"
+      },
+      {
+        "id": "TC-15-013",
+        "test_case": "회원가입 버튼 클릭",
+        "description": "인트로 페이지에서 회원가입 버튼 클릭",
+        "expected_result": "포르투갈어 회원가입 모달 표시",
+        "priority": "High",
+        "screen": "Slide 15"
+      },
+      {
+        "id": "TC-15-014",
+        "test_case": "페이지 새로고침",
+        "description": "?language=pt 상태에서 페이지 새로고침",
+        "expected_result": "파라미터 유지되며 포르투갈어 UI 유지",
+        "priority": "Medium",
+        "screen": "Slide 15"
+      },
+      {
+        "id": "TC-15-015",
+        "test_case": "브라우저 뒤로가기",
+        "description": "다른 페이지에서 뒤로가기로 인트로 페이지 복귀",
+        "expected_result": "URL 파라미터에 따라 적절한 언어로 표시",
+        "priority": "Medium",
+        "screen": "Slide 15"
+      },
+      {
+        "id": "TC-15-016",
+        "test_case": "글로벌 메뉴 접근 시 파라미터 제거",
+        "description": "랭킹, 검색 등 글로벌 메뉴 클릭",
+        "expected_result": "?language=pt 파라미터 제거되고 영어 UI로 변경",
+        "priority": "High",
+        "screen": "Slide 15"
+      },
+      {
+        "id": "TC-15-017",
+        "test_case": "내서재 접근 시 파라미터 제거",
+        "description": "헤더의 내서재 메뉴 클릭",
+        "expected_result": "?language=pt 파라미터 제거되고 영어 UI로 변경",
+        "priority": "High",
+        "screen": "Slide 15"
+      },
+      {
+        "id": "TC-15-018",
+        "test_case": "마이페이지 접근 시 파라미터 제거",
+        "description": "마이페이지 관련 메뉴 클릭",
+        "expected_result": "?language=pt 파라미터 제거되고 영어 UI로 변경",
+        "priority": "High",
+        "screen": "Slide 15"
+      },
+      {
+        "id": "TC-15-019",
+        "test_case": "페이지 로딩 시간 확인",
+        "description": "인트로 페이지 로딩 성능 측정",
+        "expected_result": "3초 이내 페이지 로딩 완료",
+        "priority": "Medium",
+        "screen": "Slide 15"
+      },
+      {
+        "id": "TC-15-020",
+        "test_case": "이미지 로딩 확인",
+        "description": "작품 썸네일 및 배너 이미지 로딩",
+        "expected_result": "모든 이미지가 정상 로딩",
+        "priority": "Medium",
+        "screen": "Slide 15"
+      },
+      {
+        "id": "TC-15-021",
+        "test_case": "이미지 로딩 실패 처리",
+        "description": "썸네일 이미지 로딩 실패 시",
+        "expected_result": "기본 이미지 또는 적절한 대체 이미지 표시",
+        "priority": "Low",
+        "screen": "Slide 15"
+      },
+      {
+        "id": "TC-15-022",
+        "test_case": "네트워크 오류 시 페이지 처리",
+        "description": "네트워크 연결 불안정 상황",
+        "expected_result": "적절한 오류 메시지 표시 및 재시도 옵션 제공",
+        "priority": "Medium",
+        "screen": "Slide 15"
+      },
+      {
+        "id": "TC-15-023",
+        "test_case": "서버 응답 지연 시 로딩 상태",
+        "description": "API 응답이 지연되는 경우",
+        "expected_result": "로딩 스피너 또는 스켈레톤 UI 표시",
+        "priority": "Medium",
+        "screen": "Slide 15"
+      },
+      {
+        "id": "TC-15-024",
+        "test_case": "특수문자 포함 URL 접근",
+        "description": "URL에 특수문자나 인코딩된 문자 포함",
+        "expected_result": "적절히 처리되거나 에러 페이지 표시",
+        "priority": "Low",
+        "screen": "Slide 15"
+      },
+      {
+        "id": "TC-15-025",
+        "test_case": "URL 직접 수정을 통한 접근",
+        "description": "주소창에서 URL 직접 입력/수정",
+        "expected_result": "유효한 URL인 경우 정상 페이지 로드",
+        "priority": "Medium",
+        "screen": "Slide 15"
+      },
+      {
+        "id": "TC-15-026",
+        "test_case": "검색엔진 크롤러 접근",
+        "description": "봇/크롤러의 페이지 접근",
+        "expected_result": "적절한 메타 정보와 함께 페이지 제공",
+        "priority": "Low",
+        "screen": "Slide 15"
+      },
+      {
+        "id": "TC-15-027",
+        "test_case": "다국어 키보드 입력 지원",
+        "description": "포르투갈어 키보드로 검색 등 입력",
+        "expected_result": "포르투갈어 문자 정상 입력 및 처리",
+        "priority": "Medium",
+        "screen": "Slide 15"
+      },
+      {
+        "id": "TC-15-028",
+        "test_case": "브라우저 언어 설정 확인",
+        "description": "브라우저 언어가 포르투갈어인 경우",
+        "expected_result": "URL 파라미터가 우선하여 적용",
+        "priority": "Low",
+        "screen": "Slide 15"
+      },
+      {
+        "id": "TC-15-029",
+        "test_case": "세션 만료 상태에서 페이지 접근",
+        "description": "로그인 세션이 만료된 상태에서 접근",
+        "expected_result": "비로그인 상태로 정상 페이지 표시",
+        "priority": "Medium",
+        "screen": "Slide 15"
+      },
+      {
+        "id": "TC-15-030",
+        "test_case": "동시 다중 탭에서 접근",
+        "description": "같은 브라우저의 여러 탭에서 동시 접근",
+        "expected_result": "각 탭이 독립적으로 정상 작동",
+        "priority": "Low",
+        "screen": "Slide 15"
+      },
+      {
+        "id": "TC-15-031",
+        "test_case": "브라우저 캐시 확인",
+        "description": "재방문 시 캐시된 콘텐츠 사용",
+        "expected_result": "적절한 캐시 정책 적용하여 빠른 로딩",
+        "priority": "Low",
+        "screen": "Slide 15"
+      },
+      {
+        "id": "TC-15-032",
+        "test_case": "북마크를 통한 접근",
+        "description": "북마크된 포르투갈 인트로 페이지 접근",
+        "expected_result": "북마크된 URL 그대로 정상 접근",
+        "priority": "Medium",
+        "screen": "Slide 15"
+      },
+      {
+        "id": "TC-15-033",
+        "test_case": "외부 링크를 통한 접근",
+        "description": "다른 사이트에서 링크 클릭하여 접근",
+        "expected_result": "referrer와 관계없이 정상 페이지 로드",
+        "priority": "Medium",
+        "screen": "Slide 15"
+      },
+      {
+        "id": "TC-15-034",
+        "test_case": "콘텐츠 없음 상태",
+        "description": "포르투갈 번역 작품이 없는 경우",
+        "expected_result": "빈 상태 메시지 또는 안내 문구 표시",
+        "priority": "Medium",
+        "screen": "Slide 15"
+      },
+      {
+        "id": "TC-15-035",
+        "test_case": "UI 텍스트 번역 누락 확인",
+        "description": "모든 UI 요소의 포르투갈어 번역 상태",
+        "expected_result": "모든 텍스트가 포르투갈어로 번역되어 표시",
+        "priority": "High",
+        "screen": "Slide 15"
+      },
+      {
+        "id": "TC-15-036",
+        "test_case": "긴 텍스트로 인한 UI 깨짐 확인",
+        "description": "포르투갈어 번역이 영어보다 긴 경우",
+        "expected_result": "레이아웃 깨지지 않고 적절히 표시",
+        "priority": "Medium",
+        "screen": "Slide 15"
+      },
+      {
+        "id": "TC-15-037",
+        "test_case": "짧은 텍스트로 인한 UI 공백 확인",
+        "description": "포르투갈어 번역이 영어보다 짧은 경우",
+        "expected_result": "부자연스러운 공백 없이 적절히 표시",
+        "priority": "Low",
+        "screen": "Slide 15"
+      },
+      {
+        "id": "TC-15-038",
+        "test_case": "폰트 렌더링 확인",
+        "description": "포르투갈어 특수 문자 렌더링",
+        "expected_result": "ã, õ, ç 등 특수 문자가 정상 표시",
+        "priority": "Medium",
+        "screen": "Slide 15"
+      },
+      {
+        "id": "TC-15-039",
+        "test_case": "RTL 텍스트 처리 확인",
+        "description": "포르투갈어는 LTR이지만 혼합 텍스트 처리",
+        "expected_result": "텍스트 방향성 올바르게 처리",
+        "priority": "Low",
+        "screen": "Slide 15"
+      },
+      {
+        "id": "TC-15-040",
+        "test_case": "접근성 확인",
+        "description": "스크린 리더기 지원 확인",
+        "expected_result": "포르투갈어 텍스트가 스크린 리더기에서 정상 읽힘",
+        "priority": "Low",
+        "screen": "Slide 15"
+      },
+      {
+        "id": "TC-18-001",
+        "test_case": "포르투갈 파라미터와 함께 회차리스트 페이지 접근",
+        "description": "/novel/123/episodes?language=pt URL로 직접 접근",
+        "expected_result": "회차리스트 UI가 포르투갈어로 표시되고, 헤더 메뉴는 영어로 유지됨",
+        "priority": "High",
+        "screen": "Slide 18"
+      },
+      {
+        "id": "TC-18-002",
+        "test_case": "포르투갈 파라미터 없이 회차리스트 페이지 접근",
+        "description": "/novel/123/episodes URL로 직접 접근",
+        "expected_result": "회차리스트 UI가 영어로 표시됨",
+        "priority": "High",
+        "screen": "Slide 18"
+      },
+      {
+        "id": "TC-18-003",
+        "test_case": "포르투갈 인트로 페이지에서 회차리스트로 이동",
+        "description": "인트로 페이지에서 회차리스트 버튼 클릭",
+        "expected_result": "URL에 language=pt 파라미터가 유지되고 회차리스트 UI가 포르투갈어로 표시됨",
+        "priority": "High",
+        "screen": "Slide 18"
+      },
+      {
+        "id": "TC-18-004",
+        "test_case": "회차리스트에서 특정 회차 클릭",
+        "description": "회차리스트에서 임의의 회차 선택 후 클릭",
+        "expected_result": "뷰어 페이지로 이동하며 language=pt 파라미터가 유지됨",
+        "priority": "High",
+        "screen": "Slide 18"
+      },
+      {
+        "id": "TC-18-005",
+        "test_case": "회차리스트에서 메인 버튼 클릭",
+        "description": "회차리스트 화면에서 메인/홈 버튼 클릭",
+        "expected_result": "글로벌 메인 페이지로 이동하며 language=pt 파라미터가 제거되고 UI가 영어로 변경됨",
+        "priority": "High",
+        "screen": "Slide 18"
+      },
+      {
+        "id": "TC-18-006",
+        "test_case": "회차리스트에서 헤더 메뉴 클릭",
+        "description": "회차리스트에서 헤더의 랭킹/검색/내서재 등 메뉴 클릭",
+        "expected_result": "해당 페이지로 이동하며 language=pt 파라미터가 제거되고 UI가 영어로 변경됨",
+        "priority": "High",
+        "screen": "Slide 18"
+      },
+      {
+        "id": "TC-18-007",
+        "test_case": "잘못된 소설 ID로 회차리스트 접근",
+        "description": "/novel/999999/episodes?language=pt 등 존재하지 않는 소설 ID로 접근",
+        "expected_result": "적절한 404 에러 페이지가 포르투갈어로 표시됨",
+        "priority": "Medium",
+        "screen": "Slide 18"
+      },
+      {
+        "id": "TC-18-008",
+        "test_case": "회차리스트 페이지 새로고침",
+        "description": "회차리스트 페이지에서 브라우저 새로고침 실행",
+        "expected_result": "페이지가 정상적으로 로드되고 language=pt 파라미터와 포르투갈어 UI가 유지됨",
+        "priority": "Medium",
+        "screen": "Slide 18"
+      },
+      {
+        "id": "TC-18-009",
+        "test_case": "회차리스트에서 브라우저 뒤로가기",
+        "description": "회차리스트에서 브라우저의 뒤로가기 버튼 클릭",
+        "expected_result": "이전 페이지로 이동하며 해당 페이지의 language 파라미터 정책에 따라 UI 언어가 결정됨",
+        "priority": "Medium",
+        "screen": "Slide 18"
+      },
+      {
+        "id": "TC-18-010",
+        "test_case": "회차리스트에서 로그인 모달 호출",
+        "description": "비로그인 상태에서 유료 회차 클릭하여 로그인 모달 호출",
+        "expected_result": "로그인 모달이 포르투갈어로 표시되고 포르투갈 버전 배너 디자인이 적용됨",
+        "priority": "High",
+        "screen": "Slide 18"
+      },
+      {
+        "id": "TC-18-011",
+        "test_case": "회차리스트에서 회원가입 모달 호출",
+        "description": "비로그인 상태에서 회원가입 링크 클릭",
+        "expected_result": "회원가입 모달이 포르투갈어로 표시되고 포르투갈 버전 배너 디자인이 적용됨",
+        "priority": "High",
+        "screen": "Slide 18"
+      },
+      {
+        "id": "TC-18-012",
+        "test_case": "회차리스트에서 결제 모달 호출",
+        "description": "유료 회차 클릭하여 결제 모달 호출",
+        "expected_result": "결제 모달이 포르투갈어로 표시됨",
+        "priority": "High",
+        "screen": "Slide 18"
+      },
+      {
+        "id": "TC-18-013",
+        "test_case": "회차리스트 URL 수동 편집",
+        "description": "주소창에서 language=pt를 language=en으로 수동 변경",
+        "expected_result": "페이지가 영어로 표시되고 헤더 메뉴도 영어로 유지됨",
+        "priority": "Medium",
+        "screen": "Slide 18"
+      },
+      {
+        "id": "TC-18-014",
+        "test_case": "회차리스트 URL에서 파라미터 제거",
+        "description": "주소창에서 ?language=pt 파라미터 전체 삭제",
+        "expected_result": "페이지가 영어로 표시됨",
+        "priority": "Medium",
+        "screen": "Slide 18"
+      },
+      {
+        "id": "TC-18-015",
+        "test_case": "회차리스트 페이지 로딩 중 상태",
+        "description": "네트워크 지연 상황에서 회차리스트 페이지 접근",
+        "expected_result": "로딩 화면이 적절한 언어(포르투갈어/영어)로 표시됨",
+        "priority": "Low",
+        "screen": "Slide 18"
+      },
+      {
+        "id": "TC-18-016",
+        "test_case": "회차리스트 네트워크 오류 상황",
+        "description": "네트워크 연결이 끊어진 상태에서 회차리스트 접근",
+        "expected_result": "네트워크 오류 메시지가 적절한 언어로 표시됨",
+        "priority": "Medium",
+        "screen": "Slide 18"
+      },
+      {
+        "id": "TC-18-017",
+        "test_case": "모바일에서 회차리스트 접근",
+        "description": "모바일 브라우저에서 /novel/123/episodes?language=pt 접근",
+        "expected_result": "모바일 회차리스트 UI가 포르투갈어로 정상 표시됨",
+        "priority": "High",
+        "screen": "Slide 18"
+      },
+      {
+        "id": "TC-18-018",
+        "test_case": "태블릿에서 회차리스트 접근",
+        "description": "태블릿 브라우저에서 /novel/123/episodes?language=pt 접근",
+        "expected_result": "태블릿 회차리스트 UI가 포르투갈어로 정상 표시됨",
+        "priority": "Medium",
+        "screen": "Slide 18"
+      },
+      {
+        "id": "TC-18-019",
+        "test_case": "회차리스트 페이지 북마크 후 재접근",
+        "description": "language=pt가 포함된 회차리스트 URL을 북마크하고 나중에 접근",
+        "expected_result": "북마크된 URL로 접근 시 포르투갈어 UI가 정상적으로 표시됨",
+        "priority": "Medium",
+        "screen": "Slide 18"
+      },
+      {
+        "id": "TC-18-020",
+        "test_case": "회차리스트에서 외부 공유 링크 생성",
+        "description": "회차리스트에서 공유 버튼 클릭하여 링크 생성",
+        "expected_result": "생성된 공유 링크에 language=pt 파라미터가 포함됨",
+        "priority": "Low",
+        "screen": "Slide 18"
+      },
+      {
+        "id": "TC-18-021",
+        "test_case": "회차리스트 무한 스크롤 테스트",
+        "description": "회차가 많은 소설의 회차리스트에서 스크롤을 통한 추가 로딩",
+        "expected_result": "추가로 로드되는 회차들도 포르투갈어 UI로 표시됨",
+        "priority": "Medium",
+        "screen": "Slide 18"
+      },
+      {
+        "id": "TC-18-022",
+        "test_case": "회차리스트 검색 기능",
+        "description": "회차리스트 내 검색 기능 사용",
+        "expected_result": "검색 UI 및 결과가 포르투갈어로 표시됨",
+        "priority": "Low",
+        "screen": "Slide 18"
+      },
+      {
+        "id": "TC-18-023",
+        "test_case": "회차리스트 정렬 기능",
+        "description": "회차리스트에서 정렬 옵션 변경",
+        "expected_result": "정렬 옵션 UI가 포르투갈어로 표시되고 기능이 정상 작동함",
+        "priority": "Low",
+        "screen": "Slide 18"
+      },
+      {
+        "id": "TC-18-024",
+        "test_case": "회차리스트 페이지네이션",
+        "description": "페이지네이션이 있는 회차리스트에서 페이지 이동",
+        "expected_result": "페이지 이동 시 language=pt 파라미터가 유지되고 UI가 포르투갈어로 유지됨",
+        "priority": "Medium",
+        "screen": "Slide 18"
+      },
+      {
+        "id": "TC-18-025",
+        "test_case": "회차리스트에서 세션 만료",
+        "description": "로그인 세션이 만료된 상태에서 유료 회차 클릭",
+        "expected_result": "세션 만료 안내 및 로그인 모달이 포르투갈어로 표시됨",
+        "priority": "Medium",
+        "screen": "Slide 18"
+      },
+      {
+        "id": "TC-18-026",
+        "test_case": "회차리스트 동시 접근",
+        "description": "같은 사용자가 여러 탭에서 동일한 회차리스트에 동시 접근",
+        "expected_result": "모든 탭에서 일관된 포르투갈어 UI가 표시됨",
+        "priority": "Low",
+        "screen": "Slide 18"
+      },
+      {
+        "id": "TC-18-027",
+        "test_case": "회차리스트에서 특수문자 포함 회차명 표시",
+        "description": "특수문자나 이모지가 포함된 회차명이 있는 경우",
+        "expected_result": "특수문자가 포르투갈어 UI에서 정상적으로 표시됨",
+        "priority": "Low",
+        "screen": "Slide 18"
+      },
+      {
+        "id": "TC-18-028",
+        "test_case": "회차리스트 빈 데이터 상태",
+        "description": "회차가 하나도 없는 소설의 회차리스트 접근",
+        "expected_result": "빈 상태 메시지가 포르투갈어로 표시됨",
+        "priority": "Low",
+        "screen": "Slide 18"
+      },
+      {
+        "id": "TC-18-029",
+        "test_case": "회차리스트에서 권한 없는 회차 접근",
+        "description": "구매하지 않은 유료 회차 클릭",
+        "expected_result": "권한 없음 안내가 포르투갈어로 표시되고 결제 모달이 포르투갈어로 호출됨",
+        "priority": "High",
+        "screen": "Slide 18"
+      },
+      {
+        "id": "TC-18-030",
+        "test_case": "회차리스트 URL에 잘못된 파라미터 추가",
+        "description": "/novel/123/episodes?language=pt&invalid=param 형태로 접근",
+        "expected_result": "잘못된 파라미터는 무시되고 language=pt만 적용되어 포르투갈어 UI가 표시됨",
+        "priority": "Low",
+        "screen": "Slide 18"
+      },
+      {
+        "id": "TC-19-001",
+        "test_case": "?language=pt 파라미터가 있는 회차리스트 페이지 정상 접근",
+        "description": "/novel/123/episodes?language=pt URL로 회차리스트 페이지에 접근",
+        "expected_result": "회차리스트 페이지가 정상적으로 로드되고 포르투갈어 UI가 적용됨",
+        "priority": "High",
+        "screen": "Slide 19"
+      },
+      {
+        "id": "TC-19-002",
+        "test_case": "?language=pt 파라미터 없이 회차리스트 페이지 접근",
+        "description": "/novel/123/episodes URL로 회차리스트 페이지에 접근",
+        "expected_result": "회차리스트 페이지가 영어 UI로 정상 로드됨",
+        "priority": "High",
+        "screen": "Slide 19"
+      },
+      {
+        "id": "TC-19-003",
+        "test_case": "시스템 UI 포르투갈어 번역 확인",
+        "description": "?language=pt 상태에서 JSON 기반으로 번역 대상인 UI 요소들이 포르투갈어로 표시되는지 확인",
+        "expected_result": "빨간색으로 표시된 시스템 UI 부분이 모두 포르투갈어로 번역되어 표시됨",
+        "priority": "High",
+        "screen": "Slide 19"
+      },
+      {
+        "id": "TC-19-004",
+        "test_case": "작가명 번역 제외 확인",
+        "description": "?language=pt 상태에서 작가명이 번역되지 않고 원본 그대로 표시되는지 확인",
+        "expected_result": "작가명은 번역되지 않고 원본 언어 그대로 표시됨",
+        "priority": "High",
+        "screen": "Slide 19"
+      },
+      {
+        "id": "TC-19-005",
+        "test_case": "날짜/시간 데이터 번역 제외 확인",
+        "description": "?language=pt 상태에서 날짜/시간 데이터가 번역되지 않는지 확인",
+        "expected_result": "날짜/시간 데이터는 번역되지 않고 기존 형식 그대로 표시됨",
+        "priority": "High",
+        "screen": "Slide 19"
+      },
+      {
+        "id": "TC-19-006",
+        "test_case": "PC 환경에서 포르투갈어 UI 적용",
+        "description": "PC 브라우저에서 ?language=pt 파라미터로 회차리스트 접근",
+        "expected_result": "PC 환경에서 포르투갈어 UI가 정상적으로 적용되어 표시됨",
+        "priority": "High",
+        "screen": "Slide 19"
+      },
+      {
+        "id": "TC-19-007",
+        "test_case": "모바일 환경에서 포르투갈어 UI 적용",
+        "description": "모바일 브라우저에서 ?language=pt 파라미터로 회차리스트 접근",
+        "expected_result": "모바일 환경에서 포르투갈어 UI가 정상적으로 적용되어 표시됨",
+        "priority": "High",
+        "screen": "Slide 19"
+      },
+      {
+        "id": "TC-19-008",
+        "test_case": "헤더 메뉴 영문 유지 확인",
+        "description": "?language=pt 상태에서 헤더 메뉴가 영문으로 유지되는지 확인",
+        "expected_result": "헤더 메뉴는 포르투갈어로 변경되지 않고 영문으로 유지됨",
+        "priority": "High",
+        "screen": "Slide 19"
+      },
+      {
+        "id": "TC-19-009",
+        "test_case": "잘못된 language 파라미터 처리",
+        "description": "?language=invalid 등 잘못된 언어 파라미터로 접근",
+        "expected_result": "기본 영어 UI로 표시되거나 적절한 에러 처리됨",
+        "priority": "Medium",
+        "screen": "Slide 19"
+      },
+      {
+        "id": "TC-19-010",
+        "test_case": "빈 language 파라미터 처리",
+        "description": "?language= (빈값) 파라미터로 접근",
+        "expected_result": "기본 영어 UI로 표시됨",
+        "priority": "Medium",
+        "screen": "Slide 19"
+      },
+      {
+        "id": "TC-19-011",
+        "test_case": "다중 language 파라미터 처리",
+        "description": "?language=pt&language=en 등 중복 파라미터로 접근",
+        "expected_result": "첫 번째 또는 마지막 파라미터가 적용되거나 적절한 처리됨",
+        "priority": "Low",
+        "screen": "Slide 19"
+      },
+      {
+        "id": "TC-19-012",
+        "test_case": "대소문자 구분 파라미터 처리",
+        "description": "?language=PT, ?language=Pt 등 대소문자 변형으로 접근",
+        "expected_result": "대소문자 구분 없이 정상적으로 포르투갈어 UI가 적용되거나 명확한 규칙에 따라 처리됨",
+        "priority": "Medium",
+        "screen": "Slide 19"
+      },
+      {
+        "id": "TC-19-013",
+        "test_case": "존재하지 않는 소설 ID로 접근",
+        "description": "?language=pt 파라미터와 함께 존재하지 않는 소설 ID로 접근",
+        "expected_result": "적절한 404 에러 페이지가 포르투갈어로 표시됨",
+        "priority": "Medium",
+        "screen": "Slide 19"
+      },
+      {
+        "id": "TC-19-014",
+        "test_case": "비정상적인 소설 ID로 접근",
+        "description": "?language=pt 파라미터와 함께 문자열이나 특수문자 등 비정상적인 소설 ID로 접근",
+        "expected_result": "적절한 에러 처리가 포르투갈어로 표시됨",
+        "priority": "Medium",
+        "screen": "Slide 19"
+      },
+      {
+        "id": "TC-19-015",
+        "test_case": "페이지 새로고침 시 파라미터 유지",
+        "description": "?language=pt 상태에서 회차리스트 페이지를 새로고침",
+        "expected_result": "새로고침 후에도 ?language=pt 파라미터가 유지되고 포르투갈어 UI가 계속 표시됨",
+        "priority": "High",
+        "screen": "Slide 19"
+      },
+      {
+        "id": "TC-19-016",
+        "test_case": "브라우저 뒤로가기 버튼으로 접근",
+        "description": "다른 페이지에서 브라우저 뒤로가기로 ?language=pt 회차리스트 페이지로 이동",
+        "expected_result": "뒤로가기 후에도 포르투갈어 UI가 정상적으로 표시됨",
+        "priority": "Medium",
+        "screen": "Slide 19"
+      },
+      {
+        "id": "TC-19-017",
+        "test_case": "북마크된 포르투갈어 회차리스트 페이지 접근",
+        "description": "북마크된 ?language=pt 회차리스트 URL로 접근",
+        "expected_result": "북마크를 통한 접근에도 포르투갈어 UI가 정상적으로 적용됨",
+        "priority": "Medium",
+        "screen": "Slide 19"
+      },
+      {
+        "id": "TC-19-018",
+        "test_case": "외부 사이트에서 직접 링크로 접근",
+        "description": "외부 사이트에서 ?language=pt 회차리스트 URL로 직접 접근",
+        "expected_result": "외부 링크를 통한 접근에도 포르투갈어 UI가 정상적으로 적용됨",
+        "priority": "Medium",
+        "screen": "Slide 19"
+      },
+      {
+        "id": "TC-19-019",
+        "test_case": "네트워크 오류 상황에서의 페이지 로딩",
+        "description": "네트워크가 불안정한 상황에서 ?language=pt 회차리스트 페이지 접근",
+        "expected_result": "네트워크 오류 메시지가 포르투갈어로 표시되거나 적절한 에러 처리됨",
+        "priority": "Low",
+        "screen": "Slide 19"
+      },
+      {
+        "id": "TC-19-020",
+        "test_case": "페이지 로딩 중 상태 확인",
+        "description": "?language=pt 회차리스트 페이지 로딩 중 표시되는 로딩 상태 확인",
+        "expected_result": "로딩 메시지나 스피너가 포르투갈어로 표시되거나 언어에 무관하게 적절히 표시됨",
+        "priority": "Low",
+        "screen": "Slide 19"
+      },
+      {
+        "id": "TC-19-021",
+        "test_case": "빈 회차리스트 상태에서 UI 확인",
+        "description": "회차가 없는 소설의 ?language=pt 회차리스트 페이지 접근",
+        "expected_result": "빈 상태 메시지가 포르투갈어로 적절히 표시됨",
+        "priority": "Medium",
+        "screen": "Slide 19"
+      },
+      {
+        "id": "TC-19-022",
+        "test_case": "다른 적용 페이지로 이동 시 파라미터 유지",
+        "description": "?language=pt 회차리스트에서 인트로 페이지, 뷰어 등 다른 적용 페이지로 이동",
+        "expected_result": "이동한 페이지에서도 ?language=pt 파라미터가 유지되고 포르투갈어 UI가 적용됨",
+        "priority": "High",
+        "screen": "Slide 19"
+      },
+      {
+        "id": "TC-19-023",
+        "test_case": "적용 페이지 외로 이동 시 파라미터 제거",
+        "description": "?language=pt 회차리스트에서 내서재, 마이페이지, 검색, 랭킹 등으로 이동",
+        "expected_result": "파라미터가 제거되고 해당 페이지들이 영어 UI로 표시됨",
+        "priority": "High",
+        "screen": "Slide 19"
+      },
+      {
+        "id": "TC-19-024",
+        "test_case": "세션 타임아웃 상황에서 페이지 접근",
+        "description": "세션이 만료된 상태에서 ?language=pt 회차리스트 페이지 접근",
+        "expected_result": "로그인이 필요한 경우 포르투갈어 로그인 모달이나 페이지로 리다이렉트됨",
+        "priority": "Medium",
+        "screen": "Slide 19"
+      },
+      {
+        "id": "TC-19-025",
+        "test_case": "동시에 여러 탭에서 접근",
+        "description": "같은 브라우저에서 여러 탭으로 ?language=pt 회차리스트 페이지에 동시 접근",
+        "expected_result": "모든 탭에서 독립적으로 포르투갈어 UI가 정상 표시됨",
+        "priority": "Low",
+        "screen": "Slide 19"
+      },
+      {
+        "id": "TC-19-026",
+        "test_case": "다른 언어 파라미터에서 변경",
+        "description": "다른 언어 파라미터(?language=en) 상태에서 ?language=pt로 변경",
+        "expected_result": "UI가 포르투갈어로 정상적으로 변경됨",
+        "priority": "Medium",
+        "screen": "Slide 19"
+      },
+      {
+        "id": "TC-19-027",
+        "test_case": "URL 직접 수정으로 파라미터 변경",
+        "description": "주소창에서 URL을 직접 수정하여 ?language=pt 파라미터 추가",
+        "expected_result": "수정된 URL로 접근 시 포르투갈어 UI가 정상적으로 적용됨",
+        "priority": "Medium",
+        "screen": "Slide 19"
+      },
+      {
+        "id": "TC-19-028",
+        "test_case": "캐시된 페이지에서 언어 변경 확인",
+        "description": "브라우저에 캐시된 회차리스트에서 ?language=pt 파라미터 적용",
+        "expected_result": "캐시 상태와 관계없이 포르투갈어 UI가 정상적으로 적용됨",
+        "priority": "Low",
+        "screen": "Slide 19"
+      },
+      {
+        "id": "TC-19-029",
+        "test_case": "UI 레이아웃 깨짐 확인 (PC)",
+        "description": "PC에서 포르투갈어 번역으로 인한 텍스트 길이 변화로 UI 레이아웃 깨짐 확인",
+        "expected_result": "텍스트 길이가 변경되어도 UI 레이아웃이 깨지지 않고 정상 표시됨",
+        "priority": "High",
+        "screen": "Slide 19"
+      },
+      {
+        "id": "TC-19-030",
+        "test_case": "UI 레이아웃 깨짐 확인 (모바일)",
+        "description": "모바일에서 포르투갈어 번역으로 인한 텍스트 길이 변화로 UI 레이아웃 깨짐 확인",
+        "expected_result": "텍스트 길이가 변경되어도 모바일 UI가 깨지지 않고 정상 표시됨",
+        "priority": "High",
+        "screen": "Slide 19"
+      },
+      {
+        "id": "TC-20-001",
+        "test_case": "?language=pt 파라미터가 있는 뷰어 URL 접근",
+        "description": "/viewer/45365?language=pt 형태의 URL로 뷰어 페이지에 접근",
+        "expected_result": "뷰어 페이지가 포르투갈어 UI로 표시되고 작품 내용도 포르투갈어로 번역되어 표시됨",
+        "priority": "High",
+        "screen": "Slide 20"
+      },
+      {
+        "id": "TC-20-002",
+        "test_case": "?language=pt 파라미터가 없는 뷰어 URL 접근",
+        "description": "/viewer/45365 형태의 URL로 뷰어 페이지에 접근",
+        "expected_result": "뷰어 페이지가 영어 UI로 표시되고 작품 내용도 원본(영어)으로 표시됨",
+        "priority": "High",
+        "screen": "Slide 20"
+      },
+      {
+        "id": "TC-20-003",
+        "test_case": "존재하지 않는 뷰어 ID로 ?language=pt 파라미터 접근",
+        "description": "잘못된 뷰어 ID를 가진 URL(/viewer/99999?language=pt)로 접근",
+        "expected_result": "404 에러 페이지가 포르투갈어로 표시됨",
+        "priority": "Medium",
+        "screen": "Slide 20"
+      },
+      {
+        "id": "TC-20-004",
+        "test_case": "뷰어에서 헤더 메뉴 언어 확인",
+        "description": "?language=pt 파라미터가 있는 뷰어에서 헤더 메뉴 언어 확인",
+        "expected_result": "헤더 메뉴는 영문으로 유지됨",
+        "priority": "High",
+        "screen": "Slide 20"
+      },
+      {
+        "id": "TC-20-005",
+        "test_case": "뷰어에서 본문 콘텐츠 번역 확인",
+        "description": "포르투갈어 번역이 적용된 작품의 뷰어에서 본문 내용 확인",
+        "expected_result": "작품의 제목, 본문, 작가명 등이 포르투갈어로 번역되어 표시됨",
+        "priority": "High",
+        "screen": "Slide 20"
+      },
+      {
+        "id": "TC-20-006",
+        "test_case": "뷰어 UI 요소 포르투갈어 번역 확인",
+        "description": "뷰어 내 버튼, 메뉴, 안내문구 등 UI 요소들의 번역 상태 확인",
+        "expected_result": "모든 UI 요소가 포르투갈어로 번역되어 표시됨",
+        "priority": "High",
+        "screen": "Slide 20"
+      },
+      {
+        "id": "TC-20-007",
+        "test_case": "포르투갈어 뷰어에서 글로벌 페이지 이동",
+        "description": "?language=pt 뷰어에서 랭킹, 검색, 내서재 등으로 이동",
+        "expected_result": "파라미터가 제거되면서 해당 페이지가 영어로 표시됨",
+        "priority": "High",
+        "screen": "Slide 20"
+      },
+      {
+        "id": "TC-20-008",
+        "test_case": "뷰어에서 로그인 모달 호출",
+        "description": "?language=pt 뷰어에서 로그인이 필요한 액션 수행하여 로그인 모달 호출",
+        "expected_result": "로그인 모달이 포르투갈어 UI로 표시됨",
+        "priority": "High",
+        "screen": "Slide 20"
+      },
+      {
+        "id": "TC-20-009",
+        "test_case": "뷰어에서 결제 모달 호출",
+        "description": "?language=pt 뷰어에서 유료 콘텐츠 접근하여 결제 모달 호출",
+        "expected_result": "결제 모달이 포르투갈어 UI로 표시됨",
+        "priority": "High",
+        "screen": "Slide 20"
+      },
+      {
+        "id": "TC-20-010",
+        "test_case": "뷰어 URL 파라미터 조작",
+        "description": "?language=pt 외에 다른 언어 파라미터(?language=kr, ?language=jp 등) 입력",
+        "expected_result": "지원하지 않는 언어 파라미터는 무시되고 기본 영어로 표시됨",
+        "priority": "Medium",
+        "screen": "Slide 20"
+      },
+      {
+        "id": "TC-20-011",
+        "test_case": "뷰어에서 페이지 새로고침",
+        "description": "?language=pt 뷰어에서 F5 또는 새로고침 버튼으로 페이지 새로고침",
+        "expected_result": "새로고침 후에도 포르투갈어 상태가 유지됨",
+        "priority": "Medium",
+        "screen": "Slide 20"
+      },
+      {
+        "id": "TC-20-012",
+        "test_case": "뷰어에서 브라우저 뒤로가기",
+        "description": "?language=pt 뷰어에서 브라우저 뒤로가기 버튼 클릭",
+        "expected_result": "이전 페이지의 언어 설정에 따라 올바르게 표시됨",
+        "priority": "Medium",
+        "screen": "Slide 20"
+      },
+      {
+        "id": "TC-20-013",
+        "test_case": "뷰어에서 북마크 추가",
+        "description": "?language=pt 뷰어에서 브라우저 북마크 추가",
+        "expected_result": "북마크된 URL에 ?language=pt 파라미터가 포함되어 저장됨",
+        "priority": "Low",
+        "screen": "Slide 20"
+      },
+      {
+        "id": "TC-20-014",
+        "test_case": "뷰어 콘텐츠 로딩 실패",
+        "description": "?language=pt 뷰어에서 콘텐츠 로딩 실패 시나리오",
+        "expected_result": "에러 메시지가 포르투갈어로 표시됨",
+        "priority": "Medium",
+        "screen": "Slide 20"
+      },
+      {
+        "id": "TC-20-015",
+        "test_case": "뷰어에서 네트워크 연결 끊김",
+        "description": "?language=pt 뷰어 사용 중 네트워크 연결이 끊어진 상황",
+        "expected_result": "네트워크 에러 메시지가 포르투갈어로 표시됨",
+        "priority": "Medium",
+        "screen": "Slide 20"
+      },
+      {
+        "id": "TC-20-016",
+        "test_case": "뷰어에서 특수문자가 포함된 콘텐츠 표시",
+        "description": "포르투갈어 특수문자(ã, ç, ê 등)가 포함된 콘텐츠를 뷰어에서 표시",
+        "expected_result": "특수문자가 깨지지 않고 올바르게 표시됨",
+        "priority": "High",
+        "screen": "Slide 20"
+      },
+      {
+        "id": "TC-20-017",
+        "test_case": "뷰어에서 폰트 크기 조절",
+        "description": "?language=pt 뷰어에서 폰트 크기 조절 기능 사용",
+        "expected_result": "포르투갈어 콘텐츠가 설정된 폰트 크기로 올바르게 표시됨",
+        "priority": "Medium",
+        "screen": "Slide 20"
+      },
+      {
+        "id": "TC-20-018",
+        "test_case": "뷰어 페이지네이션",
+        "description": "?language=pt 뷰어에서 다음/이전 페이지 이동",
+        "expected_result": "페이지 이동 후에도 포르투갈어 상태가 유지되고 ?language=pt 파라미터가 URL에 포함됨",
+        "priority": "High",
+        "screen": "Slide 20"
+      },
+      {
+        "id": "TC-20-019",
+        "test_case": "뷰어에서 선호작 추가",
+        "description": "?language=pt 뷰어에서 선호작 추가 기능 사용",
+        "expected_result": "선호작 추가 관련 UI가 포르투갈어로 표시되고 기능이 정상 작동함",
+        "priority": "Medium",
+        "screen": "Slide 20"
+      },
+      {
+        "id": "TC-20-020",
+        "test_case": "뷰어에서 댓글 기능",
+        "description": "?language=pt 뷰어에서 댓글 작성/조회 기능 사용",
+        "expected_result": "댓글 관련 UI가 포르투갈어로 표시되고 기능이 정상 작동함",
+        "priority": "Medium",
+        "screen": "Slide 20"
+      },
+      {
+        "id": "TC-20-021",
+        "test_case": "모바일 환경에서 포르투갈어 뷰어 접근",
+        "description": "모바일 브라우저에서 ?language=pt 뷰어 URL 접근",
+        "expected_result": "모바일에서도 뷰어가 포르투갈어 UI로 표시되고 반응형으로 올바르게 작동함",
+        "priority": "High",
+        "screen": "Slide 20"
+      },
+      {
+        "id": "TC-20-022",
+        "test_case": "뷰어에서 세션 만료",
+        "description": "?language=pt 뷰어 사용 중 세션이 만료된 상황",
+        "expected_result": "세션 만료 안내가 포르투갈어로 표시되고 재로그인 시 언어 설정이 유지됨",
+        "priority": "Medium",
+        "screen": "Slide 20"
+      },
+      {
+        "id": "TC-20-023",
+        "test_case": "뷰어 URL 직접 공유",
+        "description": "?language=pt 뷰어 URL을 직접 복사하여 다른 브라우저/사용자에게 공유",
+        "expected_result": "공유받은 URL을 통해 접근 시 포르투갈어 뷰어로 표시됨",
+        "priority": "Medium",
+        "screen": "Slide 20"
+      },
+      {
+        "id": "TC-20-024",
+        "test_case": "뷰어에서 다중 탭 동시 사용",
+        "description": "같은 브라우저에서 포르투갈어 뷰어와 영어 뷰어를 다른 탭에서 동시 사용",
+        "expected_result": "각 탭이 독립적으로 올바른 언어로 표시됨",
+        "priority": "Low",
+        "screen": "Slide 20"
+      },
+      {
+        "id": "TC-20-025",
+        "test_case": "뷰어 콘텐츠 번역 품질 확인",
+        "description": "AI 번역된 포르투갈어 콘텐츠의 문맥과 의미 전달 상태 확인",
+        "expected_result": "번역된 콘텐츠가 의미상 올바르고 자연스러운 포르투갈어로 표시됨",
+        "priority": "High",
+        "screen": "Slide 20"
+      },
+      {
+        "id": "TC-20-026",
+        "test_case": "뷰어에서 긴 콘텐츠 스크롤",
+        "description": "?language=pt 뷰어에서 긴 콘텐츠를 스크롤하며 읽기",
+        "expected_result": "스크롤 중에도 포르투갈어 콘텐츠가 지연 없이 올바르게 렌더링됨",
+        "priority": "Medium",
+        "screen": "Slide 20"
+      },
+      {
+        "id": "TC-20-027",
+        "test_case": "뷰어에서 이미지 콘텐츠 표시",
+        "description": "?language=pt 뷰어에서 이미지가 포함된 콘텐츠 표시",
+        "expected_result": "이미지가 올바르게 로드되고 관련 캡션/설명이 포르투갈어로 표시됨",
+        "priority": "Medium",
+        "screen": "Slide 20"
+      },
+      {
+        "id": "TC-20-028",
+        "test_case": "뷰어 로딩 시간 측정",
+        "description": "?language=pt 뷰어 페이지의 초기 로딩 시간 측정",
+        "expected_result": "포르투갈어 번역 처리로 인한 과도한 로딩 지연 없이 3초 이내 로드됨",
+        "priority": "Medium",
+        "screen": "Slide 20"
+      },
+      {
+        "id": "TC-20-029",
+        "test_case": "뷰어에서 다크모드 지원",
+        "description": "?language=pt 뷰어에서 다크모드/라이트모드 전환",
+        "expected_result": "테마 변경 시에도 포르투갈어 콘텐츠가 올바르게 표시되고 가독성이 유지됨",
+        "priority": "Low",
+        "screen": "Slide 20"
+      },
+      {
+        "id": "TC-20-030",
+        "test_case": "뷰어에서 텍스트 선택/복사",
+        "description": "?language=pt 뷰어에서 포르투갈어 텍스트 선택 및 복사",
+        "expected_result": "포르투갈어 텍스트가 올바르게 선택되고 복사됨",
+        "priority": "Low",
+        "screen": "Slide 20"
+      },
+      {
+        "id": "TC-21-001",
+        "test_case": "포르투갈 파라미터로 뷰어 페이지 정상 접근",
+        "description": "?language=pt 파라미터가 포함된 URL로 뷰어 페이지에 접근",
+        "expected_result": "뷰어 페이지가 정상적으로 로드되고 포르투갈어 UI가 표시됨",
+        "priority": "High",
+        "screen": "Slide 21"
+      },
+      {
+        "id": "TC-21-002",
+        "test_case": "뷰어 시스템 UI 포르투갈어 번역 확인",
+        "description": "뷰어 페이지의 모든 시스템 UI 텍스트가 포르투갈어로 번역되었는지 확인",
+        "expected_result": "JSON 기반 UI 텍스트가 모두 포르투갈어로 표시됨",
+        "priority": "High",
+        "screen": "Slide 21"
+      },
+      {
+        "id": "TC-21-003",
+        "test_case": "날짜/시간 데이터 번역 제외 확인",
+        "description": "뷰어 내 날짜/시간 관련 데이터가 번역되지 않고 원본 형태로 표시되는지 확인",
+        "expected_result": "날짜/시간 데이터는 번역되지 않고 원본 형태로 표시됨",
+        "priority": "High",
+        "screen": "Slide 21"
+      },
+      {
+        "id": "TC-21-004",
+        "test_case": "PC 환경에서 뷰어 포르투갈어 UI 확인",
+        "description": "PC 브라우저에서 포르투갈 파라미터로 뷰어 접근 시 UI 언어 확인",
+        "expected_result": "PC 환경에서 뷰어 UI가 포르투갈어로 정상 표시됨",
+        "priority": "High",
+        "screen": "Slide 21"
+      },
+      {
+        "id": "TC-21-005",
+        "test_case": "모바일 환경에서 뷰어 포르투갈어 UI 확인",
+        "description": "모바일 브라우저에서 포르투갈 파라미터로 뷰어 접근 시 UI 언어 확인",
+        "expected_result": "모바일 환경에서 뷰어 UI가 포르투갈어로 정상 표시됨",
+        "priority": "High",
+        "screen": "Slide 21"
+      },
+      {
+        "id": "TC-21-006",
+        "test_case": "뷰어 내 회차목록 포르투갈어 UI 확인",
+        "description": "뷰어 페이지 내부의 회차목록 UI가 포르투갈어로 번역되었는지 확인",
+        "expected_result": "회차목록의 시스템 UI 텍스트가 포르투갈어로 표시됨",
+        "priority": "High",
+        "screen": "Slide 21"
+      },
+      {
+        "id": "TC-21-007",
+        "test_case": "파라미터 없이 뷰어 접근 시 영어 UI 확인",
+        "description": "?language=pt 파라미터 없이 뷰어 페이지에 접근",
+        "expected_result": "뷰어 UI가 기본 영어로 표시됨",
+        "priority": "High",
+        "screen": "Slide 21"
+      },
+      {
+        "id": "TC-21-008",
+        "test_case": "잘못된 파라미터 값으로 뷰어 접근",
+        "description": "?language=kr, ?language=es 등 잘못된 파라미터로 뷰어 접근",
+        "expected_result": "기본 영어 UI로 표시되거나 적절한 에러 처리",
+        "priority": "Medium",
+        "screen": "Slide 21"
+      },
+      {
+        "id": "TC-21-009",
+        "test_case": "뷰어에서 다른 페이지로 이동 시 파라미터 제거 확인",
+        "description": "뷰어에서 랭킹, 검색, 마이페이지 등 글로벌 페이지로 이동",
+        "expected_result": "파라미터가 제거되고 이동한 페이지가 영어로 표시됨",
+        "priority": "High",
+        "screen": "Slide 21"
+      },
+      {
+        "id": "TC-21-010",
+        "test_case": "뷰어 페이지 새로고침 시 파라미터 유지 확인",
+        "description": "?language=pt 상태에서 뷰어 페이지를 새로고침",
+        "expected_result": "파라미터가 유지되고 포르투갈어 UI가 계속 표시됨",
+        "priority": "High",
+        "screen": "Slide 21"
+      },
+      {
+        "id": "TC-21-011",
+        "test_case": "뷰어 URL 직접 입력 접근",
+        "description": "/viewer/45365?language=pt 형태로 URL을 직접 입력하여 접근",
+        "expected_result": "뷰어 페이지가 정상 로드되고 포르투갈어 UI가 표시됨",
+        "priority": "High",
+        "screen": "Slide 21"
+      },
+      {
+        "id": "TC-21-012",
+        "test_case": "존재하지 않는 뷰어 ID로 포르투갈 파라미터 접근",
+        "description": "존재하지 않는 뷰어 ID에 ?language=pt 파라미터로 접근",
+        "expected_result": "404 에러 페이지가 포르투갈어로 표시되거나 적절한 에러 처리",
+        "priority": "Medium",
+        "screen": "Slide 21"
+      },
+      {
+        "id": "TC-21-013",
+        "test_case": "뷰어에서 로그인 모달 호출 시 포르투갈어 확인",
+        "description": "비로그인 상태에서 뷰어 기능 사용 시 로그인 모달 언어 확인",
+        "expected_result": "로그인 모달이 포르투갈어로 표시됨",
+        "priority": "High",
+        "screen": "Slide 21"
+      },
+      {
+        "id": "TC-21-014",
+        "test_case": "뷰어에서 결제 모달 호출 시 포르투갈어 확인",
+        "description": "유료 회차 접근 시 결제 모달 언어 확인",
+        "expected_result": "결제 모달이 포르투갈어로 표시됨",
+        "priority": "High",
+        "screen": "Slide 21"
+      },
+      {
+        "id": "TC-21-015",
+        "test_case": "뷰어 로딩 상태 포르투갈어 확인",
+        "description": "뷰어 페이지 로딩 중 표시되는 로딩 메시지 언어 확인",
+        "expected_result": "로딩 메시지가 포르투갈어로 표시됨",
+        "priority": "Medium",
+        "screen": "Slide 21"
+      },
+      {
+        "id": "TC-21-016",
+        "test_case": "뷰어 에러 상태 포르투갈어 확인",
+        "description": "뷰어 로딩 실패 또는 네트워크 오류 시 에러 메시지 언어 확인",
+        "expected_result": "에러 메시지가 포르투갈어로 표시됨",
+        "priority": "Medium",
+        "screen": "Slide 21"
+      },
+      {
+        "id": "TC-21-017",
+        "test_case": "뷰어 회차 네비게이션 포르투갈어 확인",
+        "description": "이전/다음 회차 버튼 및 관련 UI 텍스트 언어 확인",
+        "expected_result": "회차 네비게이션 UI가 포르투갈어로 표시됨",
+        "priority": "High",
+        "screen": "Slide 21"
+      },
+      {
+        "id": "TC-21-018",
+        "test_case": "뷰어 설정 메뉴 포르투갈어 확인",
+        "description": "뷰어 내 설정 메뉴(폰트 크기, 배경색 등) 텍스트 언어 확인",
+        "expected_result": "설정 메뉴의 모든 텍스트가 포르투갈어로 표시됨",
+        "priority": "High",
+        "screen": "Slide 21"
+      },
+      {
+        "id": "TC-21-019",
+        "test_case": "뷰어 댓글 시스템 UI 포르투갈어 확인",
+        "description": "뷰어 내 댓글 관련 시스템 UI 텍스트 언어 확인",
+        "expected_result": "댓글 시스템 UI가 포르투갈어로 표시됨",
+        "priority": "Medium",
+        "screen": "Slide 21"
+      },
+      {
+        "id": "TC-21-020",
+        "test_case": "다중 파라미터 포함 URL 접근",
+        "description": "?language=pt&other=value 형태의 다중 파라미터로 뷰어 접근",
+        "expected_result": "language=pt 파라미터가 정상 인식되어 포르투갈어 UI 표시됨",
+        "priority": "Medium",
+        "screen": "Slide 21"
+      },
+      {
+        "id": "TC-21-021",
+        "test_case": "뷰어 북마크 기능 포르투갈어 확인",
+        "description": "뷰어 내 북마크 추가/제거 관련 UI 텍스트 언어 확인",
+        "expected_result": "북마크 관련 UI가 포르투갈어로 표시됨",
+        "priority": "Medium",
+        "screen": "Slide 21"
+      },
+      {
+        "id": "TC-21-022",
+        "test_case": "뷰어 공유 기능 포르투갈어 확인",
+        "description": "뷰어 내 소셜 공유 기능 관련 UI 텍스트 언어 확인",
+        "expected_result": "공유 기능 UI가 포르투갈어로 표시됨",
+        "priority": "Low",
+        "screen": "Slide 21"
+      },
+      {
+        "id": "TC-21-023",
+        "test_case": "뷰어 빈 콘텐츠 상태 포르투갈어 확인",
+        "description": "콘텐츠가 없거나 로딩되지 않은 상태의 메시지 언어 확인",
+        "expected_result": "빈 상태 메시지가 포르투갈어로 표시됨",
+        "priority": "Medium",
+        "screen": "Slide 21"
+      },
+      {
+        "id": "TC-21-024",
+        "test_case": "뷰어 권한 없음 상태 포르투갈어 확인",
+        "description": "접근 권한이 없는 회차 접근 시 메시지 언어 확인",
+        "expected_result": "권한 없음 메시지가 포르투갈어로 표시됨",
+        "priority": "Medium",
+        "screen": "Slide 21"
+      },
+      {
+        "id": "TC-21-025",
+        "test_case": "뷰어 세션 만료 시 포르투갈어 확인",
+        "description": "로그인 세션 만료 상태에서 뷰어 기능 사용 시 메시지 언어 확인",
+        "expected_result": "세션 만료 메시지가 포르투갈어로 표시됨",
+        "priority": "Medium",
+        "screen": "Slide 21"
+      },
+      {
+        "id": "TC-21-026",
+        "test_case": "뷰어 브라우저 호환성 확인",
+        "description": "Chrome, Firefox, Safari, Edge에서 포르투갈 파라미터 뷰어 접근",
+        "expected_result": "모든 브라우저에서 포르투갈어 UI가 정상 표시됨",
+        "priority": "Medium",
+        "screen": "Slide 21"
+      },
+      {
+        "id": "TC-21-027",
+        "test_case": "뷰어 반응형 디자인 포르투갈어 확인",
+        "description": "다양한 화면 크기에서 포르투갈어 UI가 깨지지 않는지 확인",
+        "expected_result": "모든 화면 크기에서 포르투갈어 UI가 정상 표시됨",
+        "priority": "Medium",
+        "screen": "Slide 21"
+      },
+      {
+        "id": "TC-21-028",
+        "test_case": "뷰어 특수문자 포함 URL 접근",
+        "description": "URL에 특수문자가 포함된 상태에서 ?language=pt 파라미터로 접근",
+        "expected_result": "특수문자가 적절히 처리되고 포르투갈어 UI 표시됨",
+        "priority": "Low",
+        "screen": "Slide 21"
+      },
+      {
+        "id": "TC-21-029",
+        "test_case": "뷰어 성능 저하 상황에서 UI 언어 확인",
+        "description": "네트워크가 느리거나 서버 응답이 지연되는 상황에서 UI 언어 확인",
+        "expected_result": "성능 저하 상황에서도 포르투갈어 UI가 일관되게 표시됨",
+        "priority": "Low",
+        "screen": "Slide 21"
+      },
+      {
+        "id": "TC-21-030",
+        "test_case": "뷰어 동시 다중 접근 시 파라미터 처리",
+        "description": "같은 사용자가 여러 탭에서 다른 언어 파라미터로 뷰어 접근",
+        "expected_result": "각 탭에서 해당 파라미터에 맞는 언어로 UI 표시됨",
+        "priority": "Low",
+        "screen": "Slide 21"
+      },
+      {
+        "id": "TC-22-001",
+        "test_case": "내서재 기본 접근 테스트",
+        "description": "내서재 페이지에 접근했을 때 영어 UI로 표시되는지 확인",
+        "expected_result": "내서재 UI가 영어로 표시됨",
+        "priority": "High",
+        "screen": "Slide 22"
+      },
+      {
+        "id": "TC-22-002",
+        "test_case": "작품 언어 변경 버튼 존재 확인",
+        "description": "내서재에 Portuguese / English 언어 변경 버튼이 표시되는지 확인",
+        "expected_result": "Portuguese / English 언어 변경 버튼이 표시됨",
+        "priority": "High",
+        "screen": "Slide 22"
+      },
+      {
+        "id": "TC-22-003",
+        "test_case": "Portuguese 선택 시 작품 정보 변경",
+        "description": "Portuguese 언어를 선택했을 때 포르투갈 번역 작품의 정보가 포르투갈어로 표시되는지 확인",
+        "expected_result": "포르투갈 번역 작품의 정보가 포르투갈어로 표시됨",
+        "priority": "High",
+        "screen": "Slide 22"
+      },
+      {
+        "id": "TC-22-004",
+        "test_case": "English 선택 시 작품 정보 변경",
+        "description": "English 언어를 선택했을 때 작품 정보가 영어로 표시되는지 확인",
+        "expected_result": "모든 작품 정보가 영어로 표시됨",
+        "priority": "High",
+        "screen": "Slide 22"
+      },
+      {
+        "id": "TC-22-005",
+        "test_case": "포르투갈 번역 작품이 없는 경우",
+        "description": "포르투갈 번역 작품이 존재하지 않는 경우 Portuguese 선택 시 동작 확인",
+        "expected_result": "포르투갈 번역 작품이 없는 경우 영어로 유지되거나 적절한 안내 메시지 표시",
+        "priority": "Medium",
+        "screen": "Slide 22"
+      },
+      {
+        "id": "TC-22-006",
+        "test_case": "선호작 목록에서 언어 변경",
+        "description": "선호작 목록에서 Portuguese/English 변경 시 작품 정보 변경 확인",
+        "expected_result": "선호작 목록의 작품 정보가 선택된 언어로 변경됨",
+        "priority": "High",
+        "screen": "Slide 22"
+      },
+      {
+        "id": "TC-22-007",
+        "test_case": "최근 본 작품 목록에서 언어 변경",
+        "description": "최근 본 작품 목록에서 Portuguese/English 변경 시 작품 정보 변경 확인",
+        "expected_result": "최근 본 작품 목록의 작품 정보가 선택된 언어로 변경됨",
+        "priority": "High",
+        "screen": "Slide 22"
+      },
+      {
+        "id": "TC-22-008",
+        "test_case": "언어 변경 버튼 상태 유지",
+        "description": "언어를 변경한 후 페이지를 새로고침하거나 다시 접근했을 때 선택된 언어 상태가 유지되는지 확인",
+        "expected_result": "선택된 언어 상태가 유지됨",
+        "priority": "Medium",
+        "screen": "Slide 22"
+      },
+      {
+        "id": "TC-22-009",
+        "test_case": "빈 선호작 목록에서 언어 변경",
+        "description": "선호작이 없는 상태에서 언어 변경 버튼 동작 확인",
+        "expected_result": "언어 변경 버튼이 정상 동작하며 적절한 빈 상태 메시지 표시",
+        "priority": "Low",
+        "screen": "Slide 22"
+      },
+      {
+        "id": "TC-22-010",
+        "test_case": "빈 최근 본 작품 목록에서 언어 변경",
+        "description": "최근 본 작품이 없는 상태에서 언어 변경 버튼 동작 확인",
+        "expected_result": "언어 변경 버튼이 정상 동작하며 적절한 빈 상태 메시지 표시",
+        "priority": "Low",
+        "screen": "Slide 22"
+      },
+      {
+        "id": "TC-22-011",
+        "test_case": "다중 포르투갈 번역 작품 확인",
+        "description": "여러 개의 포르투갈 번역 작품이 있을 때 모든 작품 정보가 올바르게 변경되는지 확인",
+        "expected_result": "모든 포르투갈 번역 작품의 정보가 포르투갈어로 변경됨",
+        "priority": "High",
+        "screen": "Slide 22"
+      },
+      {
+        "id": "TC-22-012",
+        "test_case": "포르투갈 번역 작품과 일반 작품 혼합",
+        "description": "포르투갈 번역 작품과 일반 작품이 혼재된 상태에서 Portuguese 선택 시 동작 확인",
+        "expected_result": "포르투갈 번역 작품만 포르투갈어로 표시되고 일반 작품은 영어로 유지",
+        "priority": "High",
+        "screen": "Slide 22"
+      },
+      {
+        "id": "TC-22-013",
+        "test_case": "언어 변경 버튼 UI 확인",
+        "description": "언어 변경 버튼이 적절한 위치와 디자인으로 표시되는지 확인",
+        "expected_result": "언어 변경 버튼이 사용자가 인식하기 쉬운 위치와 디자인으로 표시됨",
+        "priority": "Medium",
+        "screen": "Slide 22"
+      },
+      {
+        "id": "TC-22-014",
+        "test_case": "언어 변경 시 로딩 상태 확인",
+        "description": "언어 변경 시 로딩 인디케이터나 상태 표시가 적절히 나타나는지 확인",
+        "expected_result": "언어 변경 중 적절한 로딩 상태가 표시됨",
+        "priority": "Low",
+        "screen": "Slide 22"
+      },
+      {
+        "id": "TC-22-015",
+        "test_case": "네트워크 오류 시 언어 변경",
+        "description": "네트워크 연결이 불안정한 상태에서 언어 변경 시도 시 동작 확인",
+        "expected_result": "네트워크 오류 시 적절한 에러 메시지 표시 및 이전 상태 유지",
+        "priority": "Medium",
+        "screen": "Slide 22"
+      },
+      {
+        "id": "TC-22-016",
+        "test_case": "빠른 연속 언어 변경",
+        "description": "Portuguese와 English를 빠르게 연속으로 변경했을 때 동작 확인",
+        "expected_result": "마지막 선택된 언어로 정상 변경되며 중복 요청 처리됨",
+        "priority": "Medium",
+        "screen": "Slide 22"
+      },
+      {
+        "id": "TC-22-017",
+        "test_case": "작품 클릭 시 언어 파라미터 전달",
+        "description": "Portuguese 상태에서 포르투갈 번역 작품을 클릭했을 때 ?language=pt 파라미터가 전달되는지 확인",
+        "expected_result": "포르투갈 번역 작품 클릭 시 ?language=pt 파라미터가 포함된 URL로 이동",
+        "priority": "High",
+        "screen": "Slide 22"
+      },
+      {
+        "id": "TC-22-018",
+        "test_case": "English 상태에서 작품 클릭",
+        "description": "English 상태에서 작품 클릭 시 언어 파라미터 없이 이동하는지 확인",
+        "expected_result": "언어 파라미터 없이 해당 작품 페이지로 이동",
+        "priority": "High",
+        "screen": "Slide 22"
+      },
+      {
+        "id": "TC-22-019",
+        "test_case": "브라우저 뒤로가기 시 언어 상태",
+        "description": "언어를 변경한 후 브라우저 뒤로가기 사용 시 언어 상태 확인",
+        "expected_result": "뒤로가기 후에도 적절한 언어 상태가 유지됨",
+        "priority": "Medium",
+        "screen": "Slide 22"
+      },
+      {
+        "id": "TC-22-020",
+        "test_case": "탭 전환 후 언어 상태",
+        "description": "다른 탭으로 이동 후 내서재 탭으로 돌아왔을 때 언어 상태 확인",
+        "expected_result": "탭 전환 후에도 선택된 언어 상태가 유지됨",
+        "priority": "Low",
+        "screen": "Slide 22"
+      },
+      {
+        "id": "TC-22-021",
+        "test_case": "모바일에서 언어 변경 버튼",
+        "description": "모바일 환경에서 언어 변경 버튼이 정상적으로 표시되고 동작하는지 확인",
+        "expected_result": "모바일에서도 언어 변경 버튼이 적절히 표시되고 정상 동작함",
+        "priority": "High",
+        "screen": "Slide 22"
+      },
+      {
+        "id": "TC-22-022",
+        "test_case": "태블릿에서 언어 변경 버튼",
+        "description": "태블릿 환경에서 언어 변경 버튼이 정상적으로 표시되고 동작하는지 확인",
+        "expected_result": "태블릿에서도 언어 변경 버튼이 적절히 표시되고 정상 동작함",
+        "priority": "Medium",
+        "screen": "Slide 22"
+      },
+      {
+        "id": "TC-22-023",
+        "test_case": "세션 만료 시 언어 변경",
+        "description": "사용자 세션이 만료된 상태에서 언어 변경 시도 시 동작 확인",
+        "expected_result": "세션 만료 시 적절한 처리 및 로그인 유도 또는 기본 동작 유지",
+        "priority": "Medium",
+        "screen": "Slide 22"
+      },
+      {
+        "id": "TC-22-024",
+        "test_case": "특수 문자가 포함된 작품명 번역",
+        "description": "특수 문자가 포함된 작품명이 포르투갈어로 번역될 때 정상 표시되는지 확인",
+        "expected_result": "특수 문자가 포함된 작품명도 포르투갈어로 정상 표시됨",
+        "priority": "Low",
+        "screen": "Slide 22"
+      },
+      {
+        "id": "TC-22-025",
+        "test_case": "긴 작품명 번역 시 UI 레이아웃",
+        "description": "긴 작품명이 포르투갈어로 번역될 때 UI 레이아웃이 깨지지 않는지 확인",
+        "expected_result": "긴 작품명도 UI 레이아웃을 깨뜨리지 않고 정상 표시됨",
+        "priority": "Medium",
+        "screen": "Slide 22"
+      },
+      {
+        "id": "TC-26-001",
+        "test_case": "?language=pt 파라미터가 있는 URL에서 결제모달 접근",
+        "description": "?language=pt 파라미터가 포함된 URL에서 결제모달에 접근했을 때 UI가 포르투갈어로 표시되는지 확인",
+        "expected_result": "결제모달의 모든 UI 텍스트가 포르투갈어로 표시됨",
+        "priority": "High",
+        "screen": "Slide 26"
+      },
+      {
+        "id": "TC-26-002",
+        "test_case": "?language=pt 파라미터 없이 결제모달 접근",
+        "description": "?language=pt 파라미터가 없는 URL에서 결제모달에 접근했을 때 UI가 영어로 표시되는지 확인",
+        "expected_result": "결제모달의 모든 UI 텍스트가 영어로 표시됨",
+        "priority": "High",
+        "screen": "Slide 26"
+      },
+      {
+        "id": "TC-26-003",
+        "test_case": "PC 환경에서 뷰어 결제모달 포르투갈어 표시",
+        "description": "PC 환경에서 ?language=pt 파라미터 상태로 뷰어 결제모달 접근 시 포르투갈어 UI 확인",
+        "expected_result": "PC 뷰어 결제모달이 포르투갈어로 정상 표시됨",
+        "priority": "High",
+        "screen": "Slide 26"
+      },
+      {
+        "id": "TC-26-004",
+        "test_case": "모바일 환경에서 뷰어 결제모달 포르투갈어 표시",
+        "description": "모바일 환경에서 ?language=pt 파라미터 상태로 뷰어 결제모달 접근 시 포르투갈어 UI 확인",
+        "expected_result": "모바일 뷰어 결제모달이 포르투갈어로 정상 표시됨",
+        "priority": "High",
+        "screen": "Slide 26"
+      },
+      {
+        "id": "TC-26-005",
+        "test_case": "PC 환경에서 기타 결제모달 포르투갈어 표시",
+        "description": "PC 환경에서 ?language=pt 파라미터 상태로 뷰어 외 결제모달 접근 시 포르투갈어 UI 확인",
+        "expected_result": "PC 기타 결제모달이 포르투갈어로 정상 표시됨",
+        "priority": "High",
+        "screen": "Slide 26"
+      },
+      {
+        "id": "TC-26-006",
+        "test_case": "모바일 환경에서 기타 결제모달 포르투갈어 표시",
+        "description": "모바일 환경에서 ?language=pt 파라미터 상태로 뷰어 외 결제모달 접근 시 포르투갈어 UI 확인",
+        "expected_result": "모바일 기타 결제모달이 포르투갈어로 정상 표시됨",
+        "priority": "High",
+        "screen": "Slide 26"
+      },
+      {
+        "id": "TC-26-007",
+        "test_case": "결제모달 내 모든 텍스트 요소 포르투갈어 번역 확인",
+        "description": "결제모달 내부의 모든 텍스트(버튼, 라벨, 안내문구, 에러메시지 등)가 포르투갈어로 번역되었는지 확인",
+        "expected_result": "결제모달 내 모든 텍스트가 포르투갈어로 번역되어 표시됨",
+        "priority": "High",
+        "screen": "Slide 26"
+      },
+      {
+        "id": "TC-26-008",
+        "test_case": "포르투갈어 상태에서 결제모달 닫기 후 재진입",
+        "description": "?language=pt 상태에서 결제모달을 닫고 다시 열었을 때 언어 유지 확인",
+        "expected_result": "결제모달을 다시 열어도 포르투갈어 상태가 유지됨",
+        "priority": "Medium",
+        "screen": "Slide 26"
+      },
+      {
+        "id": "TC-26-009",
+        "test_case": "결제모달에서 언어 파라미터 제거 시나리오",
+        "description": "결제모달 열린 상태에서 URL의 ?language=pt 파라미터가 제거되었을 때 동작 확인",
+        "expected_result": "파라미터 제거 시 결제모달이 영어로 변경되거나 적절한 처리가 됨",
+        "priority": "Medium",
+        "screen": "Slide 26"
+      },
+      {
+        "id": "TC-26-010",
+        "test_case": "잘못된 language 파라미터 값으로 결제모달 접근",
+        "description": "?language=invalid 등 잘못된 값으로 결제모달 접근 시 기본 언어(영어) 표시 확인",
+        "expected_result": "잘못된 언어 파라미터일 때 기본 영어로 표시됨",
+        "priority": "Medium",
+        "screen": "Slide 26"
+      },
+      {
+        "id": "TC-26-011",
+        "test_case": "결제모달 포르투갈어 UI 깨짐 현상 확인",
+        "description": "포르투갈어 적용 시 UI 요소들이 깨지거나 레이아웃이 틀어지는지 확인",
+        "expected_result": "포르투갈어 적용 시에도 UI 레이아웃이 정상적으로 유지됨",
+        "priority": "High",
+        "screen": "Slide 26"
+      },
+      {
+        "id": "TC-26-012",
+        "test_case": "결제모달 포르투갈어 텍스트 길이 대응",
+        "description": "영어 대비 길거나 짧은 포르투갈어 텍스트로 인한 UI 영향 확인",
+        "expected_result": "텍스트 길이가 달라져도 UI가 정상적으로 표시됨",
+        "priority": "Medium",
+        "screen": "Slide 26"
+      },
+      {
+        "id": "TC-26-013",
+        "test_case": "결제모달 포르투갈어 특수문자 표시",
+        "description": "포르투갈어 특수문자(ã, ç, õ 등)가 정상적으로 표시되는지 확인",
+        "expected_result": "포르투갈어 특수문자가 깨지지 않고 정상 표시됨",
+        "priority": "Medium",
+        "screen": "Slide 26"
+      },
+      {
+        "id": "TC-26-014",
+        "test_case": "결제모달 포르투갈어 상태에서 결제 진행",
+        "description": "?language=pt 상태에서 실제 결제 프로세스가 정상적으로 진행되는지 확인",
+        "expected_result": "포르투갈어 상태에서도 결제 프로세스가 정상 작동함",
+        "priority": "High",
+        "screen": "Slide 26"
+      },
+      {
+        "id": "TC-26-015",
+        "test_case": "결제모달 포르투갈어 상태에서 결제 실패 시 에러메시지",
+        "description": "포르투갈어 상태에서 결제 실패 시 에러메시지가 포르투갈어로 표시되는지 확인",
+        "expected_result": "결제 실패 시 에러메시지가 포르투갈어로 표시됨",
+        "priority": "High",
+        "screen": "Slide 26"
+      },
+      {
+        "id": "TC-26-016",
+        "test_case": "결제모달 포르투갈어 상태에서 로딩 메시지",
+        "description": "포르투갈어 상태에서 결제 처리 중 로딩 메시지가 포르투갈어로 표시되는지 확인",
+        "expected_result": "로딩 상태 메시지가 포르투갈어로 표시됨",
+        "priority": "Medium",
+        "screen": "Slide 26"
+      },
+      {
+        "id": "TC-26-017",
+        "test_case": "결제모달 포르투갈어 상태에서 성공 메시지",
+        "description": "포르투갈어 상태에서 결제 성공 시 완료 메시지가 포르투갈어로 표시되는지 확인",
+        "expected_result": "결제 성공 메시지가 포르투갈어로 표시됨",
+        "priority": "High",
+        "screen": "Slide 26"
+      },
+      {
+        "id": "TC-26-018",
+        "test_case": "다중 탭에서 결제모달 포르투갈어 상태 확인",
+        "description": "여러 탭에서 각각 ?language=pt와 일반 URL로 결제모달을 열었을 때 언어가 독립적으로 적용되는지 확인",
+        "expected_result": "각 탭에서 URL 파라미터에 따라 독립적으로 언어가 적용됨",
+        "priority": "Medium",
+        "screen": "Slide 26"
+      },
+      {
+        "id": "TC-26-019",
+        "test_case": "결제모달 포르투갈어 상태에서 새로고침",
+        "description": "?language=pt 상태에서 결제모달이 열린 페이지를 새로고침했을 때 언어 유지 확인",
+        "expected_result": "새로고침 후에도 포르투갈어 상태가 유지됨",
+        "priority": "Medium",
+        "screen": "Slide 26"
+      },
+      {
+        "id": "TC-26-020",
+        "test_case": "결제모달 JSON 번역 파일 누락 시 동작",
+        "description": "포르투갈어 JSON 번역 파일이 누락되거나 로드 실패 시 fallback 동작 확인",
+        "expected_result": "번역 파일 로드 실패 시 기본 영어로 표시되거나 적절한 에러 처리됨",
+        "priority": "High",
+        "screen": "Slide 26"
+      },
+      {
+        "id": "TC-26-021",
+        "test_case": "결제모달 포르투갈어 번역 키 누락 시 동작",
+        "description": "특정 번역 키가 포르투갈어 JSON에서 누락되었을 때 동작 확인",
+        "expected_result": "누락된 키는 영어로 표시되거나 키 값 자체가 표시됨",
+        "priority": "Medium",
+        "screen": "Slide 26"
+      },
+      {
+        "id": "TC-26-022",
+        "test_case": "결제모달 포르투갈어 상태에서 뒤로가기",
+        "description": "결제모달이 열린 상태에서 브라우저 뒤로가기 버튼 클릭 시 동작 확인",
+        "expected_result": "뒤로가기 시에도 언어 상태가 적절하게 유지되거나 처리됨",
+        "priority": "Medium",
+        "screen": "Slide 26"
+      },
+      {
+        "id": "TC-26-023",
+        "test_case": "결제모달 포르투갈어 상태에서 세션 만료",
+        "description": "결제모달이 열린 상태에서 세션이 만료되었을 때 언어 상태 유지 확인",
+        "expected_result": "세션 만료 후에도 URL 파라미터가 유지되면 포르투갈어 상태 유지",
+        "priority": "Low",
+        "screen": "Slide 26"
+      },
+      {
+        "id": "TC-26-024",
+        "test_case": "결제모달 포르투갈어 상태에서 네트워크 오류",
+        "description": "결제모달 로드 중 네트워크 오류 발생 시 포르투갈어 에러 메시지 표시 확인",
+        "expected_result": "네트워크 오류 시에도 에러 메시지가 포르투갈어로 표시됨",
+        "priority": "Medium",
+        "screen": "Slide 26"
+      },
+      {
+        "id": "TC-26-025",
+        "test_case": "결제모달 포르투갈어 상태에서 빈 화면 처리",
+        "description": "결제 정보가 없거나 로드되지 않은 상태에서 빈 화면 메시지가 포르투갈어로 표시되는지 확인",
+        "expected_result": "빈 화면 안내 메시지가 포르투갈어로 표시됨",
+        "priority": "Low",
+        "screen": "Slide 26"
+      }
+    ]
+  }
+}

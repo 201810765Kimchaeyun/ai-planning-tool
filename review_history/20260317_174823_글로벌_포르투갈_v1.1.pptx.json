@@ -1,0 +1,277 @@
+{
+  "id": "20260317_174823_글로벌_포르투갈_v1.1.pptx",
+  "file_name": "글로벌_포르투갈_v1.1.pptx",
+  "saved_at": "2026-03-17 17:48:23",
+  "selected": [
+    "ux_issues",
+    "policy_gaps",
+    "edge_cases",
+    "test_cases"
+  ],
+  "results": {
+    "ux_issues": [
+      {
+        "title": "포르투갈 서비스 진입 경로 부족",
+        "description": "포르투갈 서비스가 인트로 페이지 중심으로만 운영되며, 글로벌 서비스 영역에서는 노출되지 않아 사용자가 포르투갈 서비스 존재를 인지하기 어렵습니다. 회의록에서도 '회차리스트에서 메인을 눌러버리면 인트로 페이지에 가고 싶어도 못 들어가는 문제'를 언급하고 있습니다.",
+        "impact": "포르투갈 서비스 발견 가능성 저하 및 재진입 어려움으로 인한 사용자 이탈 증가"
+      },
+      {
+        "title": "헤더 메뉴와 페이지 언어 불일치",
+        "description": "헤더 메뉴는 영문으로 유지되지만 페이지 내용은 포르투갈어로 표시되어 언어 일관성이 부족합니다. 사용자가 언어 혼재 상황에서 혼란을 겪을 수 있습니다.",
+        "impact": "언어 일관성 부족으로 인한 사용자 혼란 및 UX 품질 저하"
+      },
+      {
+        "title": "파라미터 기반 언어 전환의 안정성 문제",
+        "description": "?language=pt 파라미터가 제거되면 즉시 영어로 변경되는 구조로, 사용자가 의도치 않게 파라미터를 잃어버릴 경우 갑작스러운 언어 변경이 발생할 수 있습니다. URL 공유나 북마크 시에도 파라미터 누락 위험이 있습니다.",
+        "impact": "예기치 못한 언어 변경으로 인한 사용성 저하 및 사용자 경험 단절"
+      },
+      {
+        "title": "내서재 언어 전환 복잡성",
+        "description": "내서재에서는 별도의 언어 선택 드롭다운을 통해 작품 정보 언어를 변경해야 하는 추가적인 조작이 필요하며, 이는 다른 페이지의 파라미터 기반 언어 전환과 다른 방식입니다.",
+        "impact": "언어 전환 방식의 불일치로 인한 학습 부담 증가 및 사용 편의성 저하"
+      },
+      {
+        "title": "작품명 노출 방식의 일관성 부족",
+        "description": "인트로 페이지에서는 작품명이 포르투갈어로 표시되지만, 표지 위에 포르투갈어 제목을 올려 영문 제목을 가리는 방식으로 구현됩니다. 이는 시각적 완성도를 저하시킬 수 있습니다.",
+        "impact": "시각적 품질 저하 및 작품 정보 가독성 문제 발생 가능성"
+      },
+      {
+        "title": "번역 품질 검증 체계 부족",
+        "description": "AI 번역 기반으로 콘텐츠를 제공하지만, 번역 품질에 대한 검수나 피드백 체계가 명시되지 않아 부정확한 번역으로 인한 사용자 경험 저하 위험이 있습니다.",
+        "impact": "번역 품질 문제로 인한 콘텐츠 이해도 저하 및 서비스 신뢰도 하락"
+      },
+      {
+        "title": null,
+        "description": null,
+        "impact": null
+      },
+      {
+        "title": null,
+        "description": null,
+        "impact": null
+      }
+    ],
+    "policy_gaps": [
+      {
+        "title": "URL 파라미터 유지 일관성 부족",
+        "description": "회의록에서는 '?language=pt' 파라미터가 적용 페이지 외 이동 시 제거된다고 명시했으나, 기획안의 내서재는 파라미터 유지 위치에 포함되어 있음. 또한 내서재에서 언어 변경 시 URL 파라미터 처리 방식이 명확하지 않음",
+        "recommendation": "내서재의 파라미터 정책을 명확히 정의하고, 사용자가 언어를 변경했을 때 URL 파라미터와 세션 저장 간의 우선순위를 명시해야 함"
+      },
+      {
+        "title": "콘텐츠 번역 품질 관리 정책 부재",
+        "description": "AI 번역 기반으로 진행한다고 하였으나, 번역된 콘텐츠의 품질 검증, 오역 처리, 사용자 신고 처리 등에 대한 구체적인 정책이 부재함",
+        "recommendation": "AI 번역 콘텐츠의 품질 기준, 검수 프로세스, 사용자 피드백 수집 및 처리 방안을 수립해야 함"
+      },
+      {
+        "title": "데이터 정합성 및 동기화 정책 미흡",
+        "description": "글로벌 서비스와 포르투갈 서비스 간 계정 통합 사용 시, 선호작/최근 본 작품 등의 데이터가 언어별로 다르게 저장되는지, 동기화되는지에 대한 명확한 정책이 없음",
+        "recommendation": "언어별 사용자 데이터 저장/조회 정책과 글로벌-포르투갈 서비스 간 데이터 동기화 방안을 구체적으로 정의해야 함"
+      },
+      {
+        "title": "포르투갈 작품 노출 기준 불일치",
+        "description": "회의록에서는 포르투갈 작품이 '인트로 페이지 내부에서만 노출'된다고 했으나, 내서재에서는 포르투갈 번역 작품을 노출하는 정책이 있어 일관성이 부족함",
+        "recommendation": "포르투갈 번역 작품의 전체적인 노출 정책을 통일하고, 예외 케이스에 대한 명확한 기준을 수립해야 함"
+      },
+      {
+        "title": "언어 설정 우선순위 정책 모호",
+        "description": "내서재에서 사용자의 직접 선택, local_code, iso_country 등 여러 기준이 혼재되어 있으나 우선순위와 충돌 상황에 대한 명확한 처리 방식이 부재함",
+        "recommendation": "언어 설정 결정 로직의 우선순위를 명확히 정의하고, 각 조건 간 충돌 시 처리 방안을 수립해야 함"
+      }
+    ],
+    "edge_cases": [
+      {
+        "title": "URL 파라미터 조작 시나리오",
+        "scenario": "사용자가 ?language=pt 파라미터를 수동으로 추가/제거하거나 잘못된 값(?language=xyz)으로 변경하는 경우",
+        "expected_behavior": "잘못된 언어 코드는 무시하고 영어로 기본 표시, 파라미터 없는 페이지에서는 자동 제거되어야 함"
+      },
+      {
+        "title": "브라우저 뒤로가기/앞으로가기 시 파라미터 동기화",
+        "scenario": "포르투갈 페이지에서 영문 페이지로 이동 후 브라우저 뒤로가기 버튼으로 돌아오는 경우",
+        "expected_behavior": "파라미터 상태가 유지되어 포르투갈어로 표시되어야 하며, URL과 UI 언어가 일치해야 함"
+      },
+      {
+        "title": "포르투갈어 번역이 없는 작품 접근",
+        "scenario": "?language=pt 상태에서 포르투갈어 번역이 존재하지 않는 작품에 접근하는 경우",
+        "expected_behavior": "UI는 포르투갈어를 유지하되 작품 콘텐츠는 영어 원문으로 표시하거나, 번역 없음 안내 메시지 노출"
+      },
+      {
+        "title": "내서재 언어 변경 버튼 동작 충돌",
+        "scenario": "?language=pt 상태에서 내서재의 언어 선택을 English로 변경했을 때 URL 파라미터와 충돌하는 경우",
+        "expected_behavior": "내서재 내부에서는 선택한 언어 우선 적용, URL 파라미터는 유지하되 내서재 콘텐츠만 변경"
+      },
+      {
+        "title": "회원가입 중 페이지 이동 시 local_code 저장",
+        "scenario": "?language=pt 상태에서 회원가입 진행 중 다른 페이지로 이동했다가 돌아와서 가입 완료하는 경우",
+        "expected_behavior": "최초 가입 시작 시점의 ?language=pt 상태 기준으로 local_code=pt 저장되어야 함"
+      },
+      {
+        "title": "포르투갈어 UI 텍스트 길이 초과",
+        "scenario": "포르투갈어 번역 텍스트가 원본 영어보다 길어서 UI 레이아웃을 벗어나는 경우",
+        "expected_behavior": "텍스트 말줄임(...) 처리, 툴팁 표시, 또는 레이아웃 자동 조정으로 UI 깨짐 방지"
+      },
+      {
+        "title": "결제 진행 중 언어 환경 변화",
+        "scenario": "?language=pt 상태에서 결제 시작 후, 결제 과정 중 영문 페이지로 이동하게 되는 상황",
+        "expected_behavior": "결제 트래킹에서 temp_access URL 기준으로 포르투갈 결제로 정확히 분류되어야 함"
+      },
+      {
+        "title": "검색/랭킹에서 포르투갈 작품 노출",
+        "scenario": "영문 검색/랭킹 페이지에서 포르투갈어로 번역된 작품이 검색 결과나 랭킹에 나타나는 경우",
+        "expected_behavior": "글로벌 영역에서는 포르투갈 번역 작품이 노출되지 않아야 하며, 영문 정보만 표시"
+      },
+      {
+        "title": "세션 만료 후 재로그인 시 언어 상태",
+        "scenario": "?language=pt 상태에서 세션이 만료되어 자동 로그아웃된 후 재로그인하는 경우",
+        "expected_behavior": "로그인 후에도 ?language=pt 파라미터가 유지되어 포르투갈어 환경으로 복귀되어야 함"
+      },
+      {
+        "title": "동시 접속으로 인한 번역 데이터 로딩 지연",
+        "scenario": "포르투갈 인트로 페이지에 대량 트래픽 유입으로 AI 번역 데이터 로딩이 지연되는 경우",
+        "expected_behavior": "로딩 인디케이터 표시 후 원문 표시하거나, 캐시된 번역 데이터 우선 사용으로 사용자 경험 보장"
+      }
+    ],
+    "test_cases": [
+      {
+        "id": "TC-001",
+        "test_case": "포르투갈 인트로 페이지 진입",
+        "description": "global.novelpia.com/intro?language=pt URL로 접근하여 포르투갈 인트로 페이지가 정상 노출되는지 확인",
+        "expected_result": "포르투갈어 배너, 큐레이션 문구, 50작품이 포르투갈어로 정상 노출",
+        "priority": "High"
+      },
+      {
+        "id": "TC-002",
+        "test_case": "?language=pt 파라미터 없이 인트로 페이지 접근",
+        "description": "파라미터 없이 인트로 페이지 접근 시 영문으로 노출되는지 확인",
+        "expected_result": "영문 UI 및 콘텐츠로 정상 노출",
+        "priority": "High"
+      },
+      {
+        "id": "TC-003",
+        "test_case": "포르투갈 작품 리스트 정렬 확인",
+        "description": "인트로 페이지에서 50작품이 브라질+포르투갈 회원 조회수 높은 순으로 정렬되는지 확인",
+        "expected_result": "조회수 높은 순으로 정렬된 50작품 노출",
+        "priority": "Medium"
+      },
+      {
+        "id": "TC-004",
+        "test_case": "작품명 2줄 초과 시 말줄임 처리",
+        "description": "작품명이 2줄을 초과할 경우 ...처리가 되는지 확인",
+        "expected_result": "2줄 초과 작품명은 ...로 말줄임 처리",
+        "priority": "Low"
+      },
+      {
+        "id": "TC-005",
+        "test_case": "작품 클릭 시 회차리스트 이동",
+        "description": "인트로 페이지에서 작품 클릭 시 포르투갈어 회차리스트로 이동하는지 확인",
+        "expected_result": "?language=pt 파라미터가 유지된 회차리스트 페이지로 이동",
+        "priority": "High"
+      },
+      {
+        "id": "TC-006",
+        "test_case": "?language=pt 상태에서 회원가입",
+        "description": "?language=pt 파라미터 상태에서 회원가입 시 local_code가 pt로 저장되는지 확인",
+        "expected_result": "data_member.local_code = pt로 저장",
+        "priority": "High"
+      },
+      {
+        "id": "TC-007",
+        "test_case": "포르투갈어 로그인 모달 UI",
+        "description": "?language=pt 상태에서 로그인 모달의 UI가 포르투갈어로 노출되는지 확인",
+        "expected_result": "모달 배너 및 시스템 UI가 포르투갈어로 노출",
+        "priority": "High"
+      },
+      {
+        "id": "TC-008",
+        "test_case": "뷰어 내부 로그인 모달 배너",
+        "description": "뷰어에서 뜨는 로그인/가입 모달의 배너가 포르투갈어로 노출되는지 확인",
+        "expected_result": "포르투갈어 배너('Inscreva-se para continuar' 등)로 노출",
+        "priority": "Medium"
+      },
+      {
+        "id": "TC-009",
+        "test_case": "회차리스트 포르투갈어 UI",
+        "description": "?language=pt 상태에서 회차리스트의 시스템 UI가 포르투갈어로 번역되는지 확인",
+        "expected_result": "작가명, 날짜/시간 제외한 모든 UI가 포르투갈어로 노출",
+        "priority": "High"
+      },
+      {
+        "id": "TC-010",
+        "test_case": "뷰어 포르투갈어 UI 및 콘텐츠",
+        "description": "?language=pt 상태에서 뷰어의 시스템 UI와 소설 본문이 포르투갈어로 노출되는지 확인",
+        "expected_result": "UI는 포르투갈어, 소설 본문은 AI 번역된 포르투갈어로 노출",
+        "priority": "High"
+      },
+      {
+        "id": "TC-011",
+        "test_case": "헤더 메뉴 영문 유지",
+        "description": "?language=pt 상태에서도 헤더 메뉴는 영문으로 유지되는지 확인",
+        "expected_result": "헤더 메뉴는 영문으로 유지",
+        "priority": "High"
+      },
+      {
+        "id": "TC-012",
+        "test_case": "글로벌 페이지 이동 시 파라미터 제거",
+        "description": "랭킹, 검색, 내서재 등 글로벌 페이지 이동 시 ?language=pt 파라미터가 제거되는지 확인",
+        "expected_result": "파라미터 제거되고 영문 UI로 변경",
+        "priority": "High"
+      },
+      {
+        "id": "TC-013",
+        "test_case": "내서재 언어 선택 드롭다운",
+        "description": "내서재에서 Portuguese/English 언어 선택 드롭다운이 정상 동작하는지 확인",
+        "expected_result": "선택한 언어에 따라 작품 정보가 해당 언어로 노출",
+        "priority": "High"
+      },
+      {
+        "id": "TC-014",
+        "test_case": "내서재 pt 회원 기본 언어 설정",
+        "description": "local_code가 pt인 회원의 내서재 기본 언어가 Portuguese로 설정되는지 확인",
+        "expected_result": "pt 회원은 Portuguese가 기본 선택, 포르투갈 작품이 0개면 English로 자동 전환",
+        "priority": "Medium"
+      },
+      {
+        "id": "TC-015",
+        "test_case": "내서재 띠배너 클릭",
+        "description": "내서재 상단 띠배너 클릭 시 포르투갈 인트로 페이지로 이동하는지 확인",
+        "expected_result": "포르투갈 인트로 페이지(?language=pt)로 이동",
+        "priority": "Medium"
+      },
+      {
+        "id": "TC-016",
+        "test_case": "플랜 페이지 포르투갈어 UI",
+        "description": "?language=pt 상태에서 플랜 페이지의 배너와 UI가 포르투갈어로 노출되는지 확인",
+        "expected_result": "포르투갈어 배너 이미지 및 시스템 UI로 노출",
+        "priority": "High"
+      },
+      {
+        "id": "TC-017",
+        "test_case": "결제모달 포르투갈어 UI",
+        "description": "?language=pt 상태에서 결제모달의 시스템 UI가 포르투갈어로 번역되는지 확인",
+        "expected_result": "결제모달의 모든 시스템 UI가 포르투갈어로 노출",
+        "priority": "High"
+      },
+      {
+        "id": "TC-018",
+        "test_case": "PC와 모바일 작품 노출 개수",
+        "description": "PC는 한 줄에 5개, 모바일은 3개 작품이 노출되는지 확인",
+        "expected_result": "PC: 5개/줄, 모바일: 3개/줄로 정상 노출",
+        "priority": "Medium"
+      },
+      {
+        "id": "TC-019",
+        "test_case": "무한 스크롤 50작품 노출",
+        "description": "인트로 페이지에서 무한 스크롤로 총 50작품이 노출되는지 확인",
+        "expected_result": "스크롤 시 총 50작품까지 정상 로드",
+        "priority": "Medium"
+      },
+      {
+        "id": "TC-020",
+        "test_case": "부적절한 language 파라미터",
+        "description": "?language=invalid 등 잘못된 파라미터 입력 시 처리 확인",
+        "expected_result": "기본 영문 페이지로 노출 또는 적절한 에러 처리",
+        "priority": "Low"
+      }
+    ]
+  },
+  "edited_at": "2026-03-17 17:52:46"
+}
