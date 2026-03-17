@@ -363,7 +363,7 @@ with col_policy_file:
     st.markdown('</div>', unsafe_allow_html=True)
 with col_policy_paste:
     st.markdown('<div class="section-box"><h4>📝 직접 붙여넣기</h4>', unsafe_allow_html=True)
-    st.caption("노션, 컨플루언스 등에서 텍스트를 복사해 붙여넣으세요.")
+    st.caption("노션 등에서 텍스트를 복사해 붙여넣으세요.")
     policy_paste = st.text_area(
         "정책 내용 직접 입력",
         placeholder="노션 페이지 내용, 정책 문서 텍스트 등을 여기에 붙여넣으세요...",
